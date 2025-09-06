@@ -1861,6 +1861,12 @@ body{
   }
 }
 
+/* Make all images scale properly on any device */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 /*Active-tab*/
 .nav-tabs a.active {
   font-weight: bold;
