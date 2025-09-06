@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scholars Guild — Courses</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/main2.js" defer></script>
+
+  <!--favicon-->
+<link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+     <!-- Navigation -->
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+  <div class="logo">
+    <img src="images/logo.png" alt="Scholar's Guild Logo" class="logo-icon">
+    <span class="logo-text">Scholar's Guild</span>
+  </div>
+</a>
+
+    <div class="nav-right">
+      <ul class="nav-tabs">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+
+       <a href="login.html" class="profile-btn">
+        <img src="images/user.jpg" alt="User Profile" class="profile-pic">
+      </a>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <section id="contact">
+      <h1>Contact Us</h1>
+
+      <!-- Error summary (shown when there are validation errors) -->
+      <div id="error-summary" class="visually-hidden" tabindex="-1" aria-live="assertive"></div>
+
+      <form id="contact-form" novalidate>
+        <!-- Honeypot (hidden) -->
+        <input type="text" name="company" id="company" autocomplete="off" style="display:none">
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-required="true">
+            <small class="error" aria-live="assertive"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" placeholder="you@example.com">
+            <small class="error" aria-live="assertive"></small>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" inputmode="tel" placeholder="+44 7123 456789">
+            <small class="error" aria-live="assertive"></small>
+          </div>
+
+          <div class="field">
+            <label for="interest">Country of Interest</label>
+            <select id="interest" name="interest">
+              <option value="">-- Select --</option>
+              <option value="uk">UK</option>
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="germany">Germany</option>
+              <option value="au">Australia</option>
+              <option value="austria">Austria</option>
+              <option value="netherlands">Netherlands</option>
+              <option value="denmark">Denmark</option>
+            </select>
+            <small class="help muted">Choose the study destination you prefer.</small>
+          </div>
+
+          <div class="field">
+            <label for="level">Programme Level</label>
+            <select id="level" name="level">
+              <option value="">-- Select --</option>
+              <option>Foundation</option>
+              <option>Bachelor</option>
+              <option>Master</option>
+              <option>PhD</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="intake">Preferred Intake</label>
+            <select id="intake" name="intake">
+              <option value="">-- Select --</option>
+              <option>January</option>
+              <option>May</option>
+              <option>September</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Contact Method</label>
+            <div class="row">
+              <label><input type="radio" name="contact_method" value="email" checked> Email</label>
+              <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+            </div>
+            <small class="error" aria-live="assertive"></small>
+          </div>
+
+          <div class="field">
+            <label for="attachment">Attachment (optional)</label>
+            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png">
+            <small class="help muted">Upload transcript/CV if you have one (max 5MB).</small>
+            <small class="error" aria-live="assertive"></small>
+          </div>
+
+          <div class="field col-span-2">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Tell us briefly about your background and what you want to study."></textarea>
+            <div class="row muted" style="justify-content:space-between">
+              <small>Max 500 characters</small>
+              <small><span id="msg-count">0</span>/500</small>
+            </div>
+            <small class="error" aria-live="assertive"></small>
+          </div>
+
+          <div class="field col-span-2">
+            <label>
+              <input type="checkbox" id="consent" name="consent" required aria-required="true">
+              I agree to be contacted about my enquiry.
+            </label>
+            <small class="error" aria-live="assertive"></small>
+          </div>
+
+          <div class="field col-span-2">
+            <button type="submit">Send Message</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Live clock -->
+      <div id="time" class="muted" aria-live="polite"></div>
+
+      <!-- Recent enquiries -->
+      <section aria-label="Recent enquiries" id="recent-enquiries" style="margin-top:1.25rem">
+        <h2 class="muted" style="font-size:1.1rem">Recent enquiries</h2>
+        <ul id="enquiry-list"></ul>
+      </section>
+    </section>
+  </main>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js" defer></script>
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+
+<!--favicon-->
+<link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+     <!-- Navigation -->
+<header>
+  <nav class="navbar">
+   <a href="index.html" class="logo-link">
+  <div class="logo">
+    <img src="images/logo.png" alt="Scholar's Guild Logo" class="logo-icon">
+    <span class="logo-text">Scholar's Guild</span>
+  </div>
+</a>
+
+    <div class="nav-right">
+      <ul class="nav-tabs">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+
+      <a href="login.html" class="profile-btn">
+        <img src= "images/user.jpg" alt="User Profile" class="profile-pic">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="global-search" role="search" aria-label="Site wide search">
+    <div class="search-box">
+      <input
+        type="search"
+        id="site-search-input"
+        placeholder="Search for Scholarships, Visa and so on"
+        autocomplete="on"
+        aria-label="Site wide search"
+      />
+      <ul id="search-results" role="listbox" tabindex="-1" aria-label="Search suggestions"></ul>
+    </div>
+  </div>
+</header>
+    
+    <!-- Hero Banner -->
+    <section class="hero">
+  <video autoplay muted class="bg-video" id="bgVideo"></video>
+  <div class="caption">
+    <h1>Time to explore beyond</h1><br />
+    <a href="contacts.html" class="cta-btn">Contact Us</a>
+  </div>
+</section>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/guild listening.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/guild reading.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/guild speaking.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/guild writing.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/toefl listening.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/toefl reading.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/toefl speaking.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/toefl writing.png" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/mandatory speaking.png" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/english vocab.png" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="Scholar's English">
+                Scholar's English
+            </h1>
+            <div class="author">
+                <h2>Introducing</h2>
+                <p><b>Scholar's English</b></p>
+                <p>
+                    Be an expert in English in no-time
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Scholar's Guild | <span id="currentDate"></span></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Study Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js" defer></script>
+
+    <link rel="stylesheet" href="css/explore.css">
+    <!--favicon-->
+<link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+         <!-- Navigation -->
+<header>
+  <nav class="navbar">
+     <a href="index.html" class="logo-link">
+  <div class="logo">
+    <img src="images/logo.png" alt="Scholar's Guild Logo" class="logo-icon">
+    <span class="logo-text">Scholar's Guild</span>
+  </div>
+</a>
+
+    <div class="nav-right">
+      <ul class="nav-tabs">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+
+      
+<a href="login.html" class="profile-btn" id="profileIcon">
+  <img src="images/user.jpg" alt="User Profile" class="profile-pic" />
+</a>
+    </div>
+  </nav>
+
+</header>
+
+<main>
+    <!--Mystery button-->
+<a href="explore1.html" id="teleportBtn" title="Blast off!">
+  <span class="icon">🚀</span>
+</a>
+    <div class="container mx-auto px-4 mt-20 mb-16">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-gray-800">Explore Global Study Options</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Discover the best countries and universities for your abroad study dreams.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Canada -->
+            <div class="country-card" onclick="showPopup('canada')">
+                <div class="flag-container">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/462511fa-abb2-4fae-a946-396eb5243a4a.png" alt="Canadian flag with maple leaf waving in wind">
+                    <div class="badge">Popular</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">Canada</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.799-2.034a1 1 0 00-1.175 0l-2.799 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span class="ml-1">4.8</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-1">Study Permit</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Canada is a top choice for international students, offering world-class education, post-graduation work opportunities, and a welcoming multicultural environment.
+                    </p>
+                    <div class="flex justify-between text-sm text-gray-500 mb-2">
+                        <span>Application Time:</span>
+                        <span>3-6 months</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Australia -->
+            <div class="country-card" onclick="showPopup('australia')">
+                <div class="flag-container">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/28d118fb-bdbd-4ea8-ad8c-7ce8b8109415.png" alt="Australian flag waving against blue sky with Sydney Opera House backdrop">
+                    <div class="badge">High Demand</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">Australia</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.799-2.034a1 1 0 00-1.175 0l-2.799 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span class="ml-1">4.7</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-1">Student Visa</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Australia boasts world-class universities, a vibrant student life, and post-study work opportunities, making it an attractive destination for international students.
+                    </p>
+                    <div class="flex justify-between text-sm text-gray-500 mb-2">
+                        <span>Application Time:</span>
+                        <span>4-8 months</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Germany -->
+            <div class="country-card" onclick="showPopup('germany')">
+                <div class="flag-container">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/68eeafcd-e7b1-4dca-a0d8-95984904071e.png" alt="Brandenburg Gate in Berlin with German flags fluttering">
+                    <div class="badge">EU Destination</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">Germany</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.799-2.034a1 1 0 00-1.175 0l-2.799 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span class="ml-1">4.6</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-1">Student Visa</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Germany offers high-quality, often tuition-free public universities, making it an attractive and affordable study destination in Europe.
+                    </p>
+                    <div class="flex justify-between text-sm text-gray-500 mb-2">
+                        <span>Application Time:</span>
+                        <span>2-4 months</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- USA -->
+            <div class="country-card" onclick="showPopup('usa')">
+                <div class="flag-container">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6ebb4ee2-b9cd-4292-b4f2-51f5803397d8.png" alt="American flag waving with Statue of Liberty in background">
+                    <div class="badge">Competitive</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">United States</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.799-2.034a1 1 0 00-1.175 0l-2.799 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span class="ml-1">4.5</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-1">F-1 Visa</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        The United States is home to many of the world's top universities, offering unparalleled academic excellence and diverse research opportunities for students.
+                    </p>
+                    <div class="flex justify-between text-sm text-gray-500 mb-2">
+                        <span>Application Time:</span>
+                        <span>3-9 months</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- UK -->
+            <div class="country-card" onclick="showPopup('uk')">
+                <div class="flag-container">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fcb30e03-7fb2-4515-8aa1-28cd2548254e.png" alt="Union Jack flag with Big Ben and London Eye backdrop">
+                    <div class="badge">Historical</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">United Kingdom</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.799-2.034a1 1 0 00-1.175 0l-2.799 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span class="ml-1">4.4</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-1">Student Visa</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        The UK offers a prestigious education system with globally recognized degrees, diverse cities, and a rich cultural experience for international students.
+                    </p>
+                    <div class="flex justify-between text-sm text-gray-500 mb-2">
+                        <span>Application Time:</span>
+                        <span>2-5 months</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Zealand -->
+            <div class="country-card" onclick="showPopup('nz')">
+                <div class="flag-container">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/302c78cb-d34a-4fba-962f-14eaf4bb50b9.png" alt="New Zealand flag with Southern Cross stars visible against sunset">
+                    <div class="badge">Scenic</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">New Zealand</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.799-2.034a1 1 0 00-1.175 0l-2.799 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span class="ml-1">4.7</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-1">Student Visa</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        New Zealand offers a unique study experience with high-quality education, stunning natural landscapes, and a safe, welcoming environment for international students.
+                    </p>
+                    <div class="flex justify-between text-sm text-gray-500 mb-2">
+                        <span>Application Time:</span>
+                        <span>3-6 months</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Detailed Popups -->
+    <div id="canada-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div class="p-8">
+                <div class="flex items-start">
+                    <div class="w-1/3 pr-8">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/623224a5-04e3-4183-b7f4-5d609cac9ca5.png" alt="Toronto skyline at dusk with CN Tower illuminated" class="rounded-lg mb-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Quick Facts</h4>
+                            <ul class="text-sm">
+                                <li class="mb-1"><span class="font-medium">Capital:</span> Ottawa</li>
+                                <li class="mb-1"><span class="font-medium">Population:</span> 38 million</li>
+                                <li class="mb-1"><span class="font-medium">Official Languages:</span> English, French</li>
+                                <li class="mb-1"><span class="font-medium">Currency:</span> Canadian Dollar (CAD)</li>
+                                <li class="mb-1"><span class="font-medium">Average Tuition:</span> $20-30k CAD/year</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-2/3">
+                        <h2 class="text-3xl font-bold mb-4 text-blue-800">Study in Canada</h2>
+                        <div class="flex mb-6">
+                            <button class="tab-btn active px-4 py-2 bg-blue-600 text-white rounded-l-lg" data-tab="overview">Overview</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="requirements">Requirements</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="pathways">Pathways</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200 rounded-r-lg" data-tab="costs">Costs</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="overview">
+                            <p class="mb-4">Canada is renowned worldwide as one of the top destinations for international students, thanks to its high quality of life, outstanding healthcare and education systems, and a friendly, inclusive environment for newcomers.</p>
+                            <p class="mb-4">Canadian universities and colleges offer a wide range of programs, excellent research opportunities, and clear pathways for international graduates to gain post-graduation work experience and potentially permanent residency.</p>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Key Benefits</h3>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li class="mb-2">High-quality education with globally recognized degrees</li>
+                                <li class="mb-2">Opportunities for post-graduation work permits (PGWP)</li>
+                                <li class="mb-2">Clear pathways from study to permanent residency</li>
+                                <li class="mb-2">Safe and welcoming communities with low crime rates</li>
+                                <li class="mb-2">Diverse multicultural society and vibrant student life</li>
+                            </ul>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Popular Study Fields</h3>
+                            <p class="mb-4">Popular fields of study include Business, Engineering, Computer Science, Healthcare, and Environmental Sciences, with strong industry connections.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="requirements">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Study Permit Requirements</h3>
+                            <p class="mb-4">To apply for a Canadian Study Permit:</p>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Factor</th>
+                                        <th class="text-left p-3">Minimum Requirement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Acceptance Letter</td>
+                                        <td class="p-3">From a Designated Learning Institution (DLI)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Proof of Funds</td>
+                                        <td class="p-3">$10,000 CAD/year (outside Quebec) + tuition</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Language Proficiency</td>
+                                        <td class="p-3">IELTS 6.0-6.5 or equivalent (varies by program)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Medical Exam</td>
+                                        <td class="p-3">Required for certain countries/programs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Academic Requirements</h3>
+                            <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                                <div class="mb-4">
+                                    <label class="block mb-2 font-medium">Previous Academic Average</label>
+                                    <input type="range" min="60" max="100" value="75" class="w-full">
+                                    <div class="flex justify-between mt-1">
+                                        <span>60%</span>
+                                        <span>100%</span>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block mb-2 font-medium">Desired Study Level</label>
+                                    <select class="w-full p-2 border rounded">
+                                        <option>Diploma/Certificate</option>
+                                        <option selected>Bachelor's Degree</option>
+                                        <option>Master's Degree</option>
+                                        <option>PhD</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block mb-2 font-medium">English Test Score (IELTS)</label>
+                                    <select class="w-full p-2 border rounded">
+                                        <option>5.5</option>
+                                        <option selected>6.0</option>
+                                        <option>6.5</option>
+                                        <option>7.0+</option>
+                                    </select>
+                                </div>
+                                <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="calculateScore(this)">Check Eligibility</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="pathways">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Study Pathways</h3>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Undergraduate Programs</h4>
+                                    <p class="text-sm">Bachelor's degrees across various disciplines.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Postgraduate Programs</h4>
+                                    <p class="text-sm">Master's and PhD degrees for advanced studies.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">College Diplomas/Certificates</h4>
+                                    <p class="text-sm">Vocational and applied programs for practical skills.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Co-op Programs</h4>
+                                    <p class="text-sm">Integrate academic study with paid work experience.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Pathway Programs</h4>
+                                    <p class="text-sm">Language or foundation courses leading to degree programs.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Post-Graduation Work Permit (PGWP)</h4>
+                                    <p class="text-sm">Allows international graduates to work in Canada after study.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="costs">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Estimated Costs</h3>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Fee</th>
+                                        <th class="text-left p-3">Amount (CAD)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Tuition Fees (per year)</td>
+                                        <td class="p-3">$20,000 - $30,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Living Expenses (per year)</td>
+                                        <td class="p-3">$10,000 - $15,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Study Permit Application</td>
+                                        <td class="p-3">$150</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">IELTS/Language Test</td>
+                                        <td class="p-3">$300</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Medical Exam (if required)</td>
+                                        <td class="p-3">$200-300</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mb-4">Total estimated annual cost: $30,000 - $45,000 CAD</p>
+                            <p class="text-sm text-gray-600">Note: Costs vary significantly by institution, program, and city. These are estimates only.</p>
+                        </div>
+                        <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105" onclick="bookAppointment('canada')">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="australia-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div class="p-8">
+                <div class="flex items-start">
+                    <div class="w-1/3 pr-8">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5faebc3b-f9b0-4568-a871-5b1f6864bf58.png" alt="Sydney Opera House at sunset with Harbour Bridge backdrop" class="rounded-lg mb-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Quick Facts</h4>
+                            <ul class="text-sm">
+                                <li class="mb-1"><span class="font-medium">Capital:</span> Canberra</li>
+                                <li class="mb-1"><span class="font-medium">Population:</span> 26 million</li>
+                                <li class="mb-1"><span class="font-medium">Official Language:</span> English</li>
+                                <li class="mb-1"><span class="font-medium">Currency:</span> Australian Dollar (AUD)</li>
+                                <li class="mb-1"><span class="font-medium">Average Tuition:</span> $25-45k AUD/year</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-2/3">
+                        <h2 class="text-3xl font-bold mb-4 text-blue-800">Study in Australia</h2>
+                        <div class="flex mb-6">
+                            <button class="tab-btn active px-4 py-2 bg-blue-600 text-white rounded-l-lg" data-tab="au-overview">Overview</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="au-requirements">Requirements</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="au-pathways">Pathways</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200 rounded-r-lg" data-tab="au-costs">Costs</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="au-overview">
+                            <p class="mb-4">Australia’s top-ranked universities draw students from across the globe with their high academic standards, stunning natural beauty, and exceptional quality of life.</p>
+                            <p class="mb-4">The Australian education system is globally recognized for its quality and innovation, offering a diverse range of courses and research opportunities. Post-study work options are also available.</p>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Key Benefits</h3>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li class="mb-2">World-class universities and research facilities</li>
+                                <li class="mb-2">Post-study work visa opportunities</li>
+                                <li class="mb-2">High quality of life and diverse culture</li>
+                                <li class="mb-2">Beautiful natural landscapes and outdoor lifestyle</li>
+                                <li class="mb-2">Strong student support services</li>
+                            </ul>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Popular Cities for Students</h3>
+                            <p class="mb-4">Major cities like Sydney, Melbourne, Brisbane, and Perth are popular student hubs, offering a mix of academic excellence and vibrant city life.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="au-requirements">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Student Visa (Subclass 500) Requirements</h3>
+                            <p class="mb-4">General requirements for an Australian Student Visa:</p>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Factor</th>
+                                        <th class="text-left p-3">Minimum Requirement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Enrollment</td>
+                                        <td class="p-3">Confirmation of Enrollment (CoE) from an Australian institution</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Genuine Temporary Entrant (GTE)</td>
+                                        <td class="p-3">Statement demonstrating genuine intention to stay temporarily</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">English Proficiency</td>
+                                        <td class="p-3">IELTS 6.0 or equivalent (varies by institution/program)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Financial Capacity</td>
+                                        <td class="p-3">Proof of funds for living costs and tuition</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Academic Requirements</h3>
+                            <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                                <div class="mb-4">
+                                    <label class="block mb-2 font-medium">Previous Academic Average</label>
+                                    <select class="w-full p-2 border rounded">
+                                        <option>Below 60%</option>
+                                        <option selected>60-70%</option>
+                                        <option>70-80%</option>
+                                        <option>80%+ (Distinction)</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block mb-2 font-medium">English Test Score (IELTS)</label>
+                                    <select class="w-full p-2 border rounded">
+                                        <option>5.5</option>
+                                        <option selected>6.0</option>
+                                        <option>6.5</option>
+                                        <option>7.0+</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block mb-2 font-medium">Gap in Studies (Years)</label>
+                                    <select class="w-full p-2 border rounded">
+                                        <option>0-1 year</option>
+                                        <option selected>1-2 years</option>
+                                        <option>2-3 years</option>
+                                        <option>3+ years</option>
+                                    </select>
+                                </div>
+                                <button class="bg-blue-600 text-white px-4 py-2 rounded">Check Eligibility</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="au-pathways">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Study Pathways</h3>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Higher Education Sector Visa</h4>
+                                    <p class="text-sm">For Bachelor's, Master's, PhD degrees.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Vocational Education and Training (VET)</h4>
+                                    <p class="text-sm">For diplomas and certificates in trades and skills.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">English Language Intensive Courses (ELICOS)</h4>
+                                    <p class="text-sm">For students primarily studying English.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Schools Sector Visa</h4>
+                                    <p class="text-sm">For primary and secondary school students.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Post-Study Work Visa (Subclass 485)</h4>
+                                    <p class="text-sm">Allows eligible graduates to work in Australia temporarily.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Research Student Visa</h4>
+                                    <p class="text-sm">For Master's by research or PhD programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="au-costs">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Estimated Costs</h3>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Fee</th>
+                                        <th class="text-left p-3">Amount (AUD)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Tuition Fees (per year)</td>
+                                        <td class="p-3">$25,000 - $45,000</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Living Expenses (per year)</td>
+                                        <td class="p-3">$21,041 (minimum)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Student Visa Application</td>
+                                        <td class="p-3">$650</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Overseas Student Health Cover (OSHC)</td>
+                                        <td class="p-3">$500-700/year</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">IELTS Test</td>
+                                        <td class="p-3">$340</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mb-4">Total estimated annual cost: $46,000 - $67,000 AUD</p>
+                            <p class="text-sm text-gray-600">Note: These are estimates. Actual costs depend on your lifestyle, institution, and program.</p>
+                        </div>
+                        <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105" onclick="bookAppointment('australia')">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Germany Popup -->
+    <div id="germany-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div class="p-8">
+                <div class="flex items-start">
+                    <div class="w-1/3 pr-8">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/03dc9463-9969-4876-a8a2-f16cc5fd09d8.png" alt="Brandenburg Gate in Berlin with German flags fluttering" class="rounded-lg mb-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Quick Facts</h4>
+                            <ul class="text-sm">
+                                <li class="mb-1"><span class="font-medium">Capital:</span> Berlin</li>
+                                <li class="mb-1"><span class="font-medium">Population:</span> 83 million</li>
+                                <li class="mb-1"><span class="font-medium">Official Language:</span> German</li>
+                                <li class="mb-1"><span class="font-medium">Currency:</span> Euro (EUR)</li>
+                                <li class="mb-1"><span class="font-medium">Average Tuition:</span> €0-€1,500/semester (public)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-2/3">
+                        <h2 class="text-3xl font-bold mb-4 text-blue-800">Study in Germany</h2>
+                        <div class="flex mb-6">
+                            <button class="tab-btn active px-4 py-2 bg-blue-600 text-white rounded-l-lg" data-tab="de-overview">Overview</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="de-requirements">Requirements</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="de-pathways">Pathways</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200 rounded-r-lg" data-tab="de-costs">Costs</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="de-overview">
+                            <p class="mb-4">Germany, a leading economy in Europe, offers excellent academic opportunities, particularly in STEM fields. Many public universities offer tuition-free education, making it a highly attractive and affordable study destination.</p>
+                            <p class="mb-4">The German education system is known for its strong research focus and practical orientation, preparing students for successful careers in a globalized world. Post-study work options are also available.</p>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Key Benefits</h3>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li class="mb-2">Often tuition-free education at public universities</li>
+                                <li class="mb-2">Globally recognized degrees and strong research focus</li>
+                                <li class="mb-2">Excellent job market and post-study work opportunities</li>
+                                <li class="mb-2">High quality of life and strong social security system</li>
+                                <li class="mb-2">Rich cultural heritage and central location in Europe</li>
+                            </ul>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Language of Instruction</h3>
+                            <p class="mb-4">While many programs are taught in German, an increasing number of Bachelor's and Master's programs are offered entirely in English, especially at the postgraduate level.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="de-requirements">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Student Visa Requirements</h3>
+                            <p class="mb-4">To apply for a German Student Visa:</p>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Factor</th>
+                                        <th class="text-left p-3">Minimum Requirement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">University Admission</td>
+                                        <td class="p-3">Letter of admission from a German university</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Proof of Funds</td>
+                                        <td class="p-3">€11,208 per year (blocked account)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Academic Qualifications</td>
+                                        <td class="p-3">Recognized secondary school leaving certificate or Bachelor's degree</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Health Insurance</td>
+                                        <td class="p-3">Valid health insurance for Germany</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Language Requirements</h3>
+                            <p class="mb-4">For German-taught programs, typically B1 or C1 German proficiency is required. For English-taught programs, IELTS 6.0-6.5 or TOEFL equivalent is common.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="de-pathways">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Study Pathways</h3>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Bachelor's Programs</h4>
+                                    <p class="text-sm">Undergraduate degrees at universities and universities of applied sciences.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Master's Programs</h4>
+                                    <p class="text-sm">Postgraduate degrees, often available in English.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">PhD Programs</h4>
+                                    <p class="text-sm">Doctoral research opportunities.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Foundation Courses (Studienkolleg)</h4>
+                                    <p class="text-sm">Preparatory courses for international students whose school-leaving certificate is not recognized.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Language Course Visa</h4>
+                                    <p class="text-sm">For those primarily coming to learn German.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Post-Study Work Permit</h4>
+                                    <p class="text-sm">Allows graduates to stay for 18 months to seek employment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="de-costs">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Estimated Costs</h3>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Fee</th>
+                                        <th class="text-left p-3">Amount (EUR)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Tuition Fees (Public Universities)</td>
+                                        <td class="p-3">€0 - €1,500/semester</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Living Expenses (per year)</td>
+                                        <td class="p-3">€11,208 (blocked account)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Student Visa Application</td>
+                                        <td class="p-3">€75 - €100</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Health Insurance (per month)</td>
+                                        <td class="p-3">€80 - €150</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Semester Contribution</td>
+                                        <td class="p-3">€100 - €350/semester</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mb-4">Total estimated annual cost: €12,000 - €15,000 EUR</p>
+                            <p class="text-sm text-gray-600">Note: Tuition fees apply to private universities and some federal states. Living costs vary by city.</p>
+                        </div>
+                        <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105" onclick="bookAppointment('germany')">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- USA Popup -->
+    <div id="usa-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div class="p-8">
+                <div class="flex items-start">
+                    <div class="w-1/3 pr-8">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ee06be8c-7f28-47eb-ad08-5a2cc3063c75.png" alt="American flag waving with Statue of Liberty in background" class="rounded-lg mb-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Quick Facts</h4>
+                            <ul class="text-sm">
+                                <li class="mb-1"><span class="font-medium">Capital:</span> Washington D.C.</li>
+                                <li class="mb-1"><span class="font-medium">Population:</span> 330 million</li>
+                                <li class="mb-1"><span class="font-medium">Official Language:</span> English</li>
+                                <li class="mb-1"><span class="font-medium">Currency:</span> US Dollar (USD)</li>
+                                <li class="mb-1"><span class="font-medium">Average Tuition:</span> $20-50k USD/year</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-2/3">
+                        <h2 class="text-3xl font-bold mb-4 text-blue-800">Study in United States</h2>
+                        <div class="flex mb-6">
+                            <button class="tab-btn active px-4 py-2 bg-blue-600 text-white rounded-l-lg" data-tab="us-overview">Overview</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="us-requirements">Requirements</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="us-pathways">Pathways</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200 rounded-r-lg" data-tab="us-costs">Costs</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="us-overview">
+                            <p class="mb-4">The United States is home to many of the world's most prestigious universities and colleges, offering unparalleled academic excellence, cutting-edge research opportunities, and a diverse range of programs.</p>
+                            <p class="mb-4">Studying in the U.S. provides access to a vast network of alumni, innovative learning environments, and opportunities for practical training through programs like Optional Practical Training (OPT).</p>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Key Benefits</h3>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li class="mb-2">World-renowned universities and academic programs</li>
+                                <li class="mb-2">Diverse range of courses and specialization options</li>
+                                <li class="mb-2">Opportunities for research and innovation</li>
+                                <li class="mb-2">Optional Practical Training (OPT) for work experience</li>
+                                <li class="mb-2">Vibrant campus life and cultural diversity</li>
+                            </ul>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Application Process</h3>
+                            <p class="mb-4">The U.S. university application process can be competitive and requires careful planning, including standardized tests (SAT/ACT, GRE/GMAT) and strong essays.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="us-requirements">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">F-1 Student Visa Requirements</h3>
+                            <p class="mb-4">To obtain an F-1 Student Visa for the U.S.:</p>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Factor</th>
+                                        <th class="text-left p-3">Minimum Requirement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Acceptance</td>
+                                        <td class="p-3">Form I-20 from a SEVP-approved institution</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Financial Proof</td>
+                                        <td class="p-3">Funds to cover tuition and living expenses for the first year</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">English Proficiency</td>
+                                        <td class="p-3">TOEFL/IELTS scores (varies by university)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Ties to Home Country</td>
+                                        <td class="p-3">Demonstrate intent to return after studies</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Academic Requirements</h3>
+                            <p class="mb-4">Requirements vary widely by institution and program, but generally include strong academic transcripts, letters of recommendation, and standardized test scores (e.g., SAT, ACT, GRE, GMAT).</p>
+                        </div>
+                        
+                        <div class="tab-content" id="us-pathways">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Study Pathways</h3>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Undergraduate Degrees</h4>
+                                    <p class="text-sm">Bachelor's programs at colleges and universities.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Graduate Degrees</h4>
+                                    <p class="text-sm">Master's and Doctoral (PhD) programs.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Community Colleges</h4>
+                                    <p class="text-sm">Affordable associate degrees and transfer programs.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">English Language Programs</h4>
+                                    <p class="text-sm">Intensive English language courses (F-1 visa).</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Optional Practical Training (OPT)</h4>
+                                    <p class="text-sm">Temporary employment directly related to major field of study.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">STEM OPT Extension</h4>
+                                    <p class="text-sm">Additional 24-month extension for STEM degree holders.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="us-costs">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Estimated Costs</h3>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Fee</th>
+                                        <th class="text-left p-3">Amount (USD)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Tuition Fees (per year)</td>
+                                        <td class="p-3">$20,000 - $50,000+</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Living Expenses (per year)</td>
+                                        <td class="p-3">$10,000 - $20,000+</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">SEVIS I-901 Fee</td>
+                                        <td class="p-3">$350</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Visa Application Fee (MRV)</td>
+                                        <td class="p-3">$160</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Health Insurance (per year)</td>
+                                        <td class="p-3">$1,000 - $3,000+</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mb-4">Total estimated annual cost: $30,000 - $70,000+ USD</p>
+                            <p class="text-sm text-gray-600">Note: Costs vary significantly by institution type (public/private), program, and location.</p>
+                        </div>
+                        <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105" onclick="bookAppointment('usa')">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UK Popup -->
+    <div id="uk-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div class="p-8">
+                <div class="flex items-start">
+                    <div class="w-1/3 pr-8">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d363d4c-56d5-432d-9bb7-65efeb3dda24.png" alt="Union Jack flag with Big Ben and London Eye backdrop" class="rounded-lg mb-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Quick Facts</h4>
+                            <ul class="text-sm">
+                                <li class="mb-1"><span class="font-medium">Capital:</span> London</li>
+                                <li class="mb-1"><span class="font-medium">Population:</span> 67 million</li>
+                                <li class="mb-1"><span class="font-medium">Official Language:</span> English</li>
+                                <li class="mb-1"><span class="font-medium">Currency:</span> Pound Sterling (GBP)</li>
+                                <li class="mb-1"><span class="font-medium">Average Tuition:</span> £12-30k GBP/year</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-2/3">
+                        <h2 class="text-3xl font-bold mb-4 text-blue-800">Study in United Kingdom</h2>
+                        <div class="flex mb-6">
+                            <button class="tab-btn active px-4 py-2 bg-blue-600 text-white rounded-l-lg" data-tab="uk-overview">Overview</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="uk-requirements">Requirements</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="uk-pathways">Pathways</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200 rounded-r-lg" data-tab="uk-costs">Costs</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="uk-overview">
+                            <p class="mb-4">The United Kingdom offers a prestigious education system with globally recognized degrees, diverse cities, and a rich cultural experience for international students. Its universities are consistently ranked among the best in the world.</p>
+                            <p class="mb-4">The UK's education system emphasizes critical thinking and independent learning. Post-study work opportunities are available through the Graduate visa route.</p>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Key Benefits</h3>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li class="mb-2">World-renowned universities and academic excellence</li>
+                                <li class="mb-2">Globally recognized degrees and qualifications</li>
+                                <li class="mb-2">Access to the NHS (National Health Service)</li>
+                                <li class="mb-2">Graduate visa route for post-study work</li>
+                                <li class="mb-2">Rich cultural heritage and diverse student communities</li>
+                            </ul>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Student Life</h3>
+                            <p class="mb-4">UK cities offer a vibrant student life with numerous cultural attractions, social events, and opportunities for part-time work during studies.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="uk-requirements">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Student Visa (Tier 4 General) Requirements</h3>
+                            <p class="mb-4">To qualify for a UK Student Visa:</p>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Factor</th>
+                                        <th class="text-left p-3">Minimum Requirement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">CAS (Confirmation of Acceptance for Studies)</td>
+                                        <td class="p-3">From a licensed student sponsor</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Financial Capacity</td>
+                                        <td class="p-3">Funds for tuition fees and living costs (£1,334/month London, £1,023/month outside London)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">English Proficiency</td>
+                                        <td class="p-3">B2 level on the CEFR scale (IELTS 5.5-6.0+)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Academic Progression</td>
+                                        <td class="p-3">Must be studying at a higher level than previous UK qualification</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Academic Requirements</h3>
+                            <p class="mb-4">Requirements vary by university and program, but generally include academic transcripts, personal statement, and references. Some programs may require specific subject prerequisites.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="uk-pathways">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Study Pathways</h3>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Undergraduate Degrees</h4>
+                                    <p class="text-sm">Bachelor's programs (typically 3 years).</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Postgraduate Degrees</h4>
+                                    <p class="text-sm">Master's (typically 1 year) and PhD programs.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Foundation Year Programs</h4>
+                                    <p class="text-sm">Preparatory courses for international students.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Pre-sessional English Courses</h4>
+                                    <p class="text-sm">For students who need to improve their English before their main course.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Graduate Visa</h4>
+                                    <p class="text-sm">Allows eligible graduates to stay and work for 2-3 years after study.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Short-term Study Visa</h4>
+                                    <p class="text-sm">For courses up to 6 months (or 11 months for English language).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="uk-costs">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Estimated Costs</h3>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Fee</th>
+                                        <th class="text-left p-3">Amount (GBP)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Tuition Fees (per year)</td>
+                                        <td class="p-3">£12,000 - £30,000+</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Living Expenses (per year)</td>
+                                        <td class="p-3">£12,276 (outside London) - £15,000+ (London)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Student Visa Application</td>
+                                        <td class="p-3">£490</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Immigration Health Surcharge (IHS)</td>
+                                        <td class="p-3">£776 per year</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">English Language Test</td>
+                                        <td class="p-3">£150 - £250</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mb-4">Total estimated annual cost: £25,000 - £45,000+ GBP</p>
+                            <p class="text-sm text-gray-600">Note: Fees vary by university, program, and location. IHS is a significant additional cost.</p>
+                        </div>
+                        <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105" onclick="bookAppointment('uk')">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Zealand Popup -->
+    <div id="nz-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <div class="p-8">
+                <div class="flex items-start">
+                    <div class="w-1/3 pr-8">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc10a1ef-f8ac-43ad-bbd4-71b1884b4bf9.png" alt="New Zealand flag with Southern Cross stars visible against sunset" class="rounded-lg mb-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Quick Facts</h4>
+                            <ul class="text-sm">
+                                <li class="mb-1"><span class="font-medium">Capital:</span> Wellington</li>
+                                <li class="mb-1"><span class="font-medium">Population:</span> 5 million</li>
+                                <li class="mb-1"><span class="font-medium">Official Languages:</span> English, Māori, NZ Sign Language</li>
+                                <li class="mb-1"><span class="font-medium">Currency:</span> New Zealand Dollar (NZD)</li>
+                                <li class="mb-1"><span class="font-medium">Average Tuition:</span> $20-35k NZD/year</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-2/3">
+                        <h2 class="text-3xl font-bold mb-4 text-blue-800">Study in New Zealand</h2>
+                        <div class="flex mb-6">
+                            <button class="tab-btn active px-4 py-2 bg-blue-600 text-white rounded-l-lg" data-tab="nz-overview">Overview</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="nz-requirements">Requirements</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200" data-tab="nz-pathways">Pathways</button>
+                            <button class="tab-btn px-4 py-2 bg-gray-200 rounded-r-lg" data-tab="nz-costs">Costs</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="nz-overview">
+                            <p class="mb-4">New Zealand offers a unique study experience with high-quality education, stunning natural landscapes, and a safe, welcoming environment for international students. Its universities are well-regarded globally.</p>
+                            <p class="mb-4">The country emphasizes practical, hands-on learning and offers a supportive environment for international students. Post-study work visas are available to help graduates gain work experience.</p>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Key Benefits</h3>
+                            <ul class="list-disc pl-5 mb-6">
+                                <li class="mb-2">High-quality education system with practical focus</li>
+                                <li class="mb-2">Post-study work visa opportunities</li>
+                                <li class="mb-2">Exceptional natural environment and outdoor activities</li>
+                                <li class="mb-2">Safe and welcoming culture</li>
+                                <li class="mb-2">Good work-life balance and relaxed pace of life</li>
+                            </ul>
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Study and Work</h3>
+                            <p class="mb-4">International students in New Zealand can often work part-time during their studies, helping to offset living costs and gain valuable work experience.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="nz-requirements">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Student Visa Requirements</h3>
+                            <p class="mb-4">To qualify for a New Zealand Student Visa:</p>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Factor</th>
+                                        <th class="text-left p-3">Minimum Requirement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Offer of Place</td>
+                                        <td class="p-3">From an approved education provider</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Proof of Funds</td>
+                                        <td class="p-3">NZD $20,000 per year (for courses over 36 weeks)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">English Proficiency</td>
+                                        <td class="p-3">IELTS 5.5-6.5 or equivalent (varies by program)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Good Health and Character</td>
+                                        <td class="p-3">Medical certificates and police certificates may be required</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <h3 class="text-xl font-bold mt-6 mb-3 text-blue-700">Academic Requirements</h3>
+                            <p class="mb-4">Requirements vary by institution and program, but generally include academic transcripts and evidence of previous study. Some postgraduate programs may require specific research proposals.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="nz-pathways">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Study Pathways</h3>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">University Degrees</h4>
+                                    <p class="text-sm">Bachelor's, Master's, and PhD programs.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Institutes of Technology and Polytechnics (ITPs)</h4>
+                                    <p class="text-sm">Practical, career-focused diplomas and degrees.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Private Training Establishments (PTEs)</h4>
+                                    <p class="text-sm">Specialized courses and vocational training.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">English Language Schools</h4>
+                                    <p class="text-sm">For improving English proficiency.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Post-Study Work Visa</h4>
+                                    <p class="text-sm">Allows eligible graduates to work in NZ for 1-3 years.</p>
+                                </div>
+                                <div class="border p-4 rounded-lg hover:border-blue-500 transition">
+                                    <h4 class="font-bold mb-2">Pathway Student Visa</h4>
+                                    <p class="text-sm">Allows study of up to 3 consecutive courses on one visa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="nz-costs">
+                            <h3 class="text-xl font-bold mt-4 mb-3 text-blue-700">Estimated Costs</h3>
+                            <table class="w-full mb-6">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="text-left p-3">Fee</th>
+                                        <th class="text-left p-3">Amount (NZD)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="p-3">Tuition Fees (per year)</td>
+                                        <td class="p-3">$20,000 - $35,000+</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Living Expenses (per year)</td>
+                                        <td class="p-3">$20,000 (minimum)</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Student Visa Application</td>
+                                        <td class="p-3">$330 - $430</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">Medical Examination</td>
+                                        <td class="p-3">$300 - $600</td>
+                                    </tr>
+                                    <tr class="border-b">
+                                        <td class="p-3">IELTS Test</td>
+                                        <td class="p-3">$400</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mb-4">Total estimated annual cost: $40,000 - $55,000+ NZD</p>
+                            <p class="text-sm text-gray-600">Note: Costs vary by institution, program, and city. These are estimates only.</p>
+                        </div>
+                        <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105" onclick="bookAppointment('nz')">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <script>
+        function showPopup(country) {
+            document.getElementById(country + '-popup').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function hidePopup() {
+            const popups = document.querySelectorAll('.popup');
+            popups.forEach(popup => {
+                popup.style.display = 'none';
+            });
+            document.body.style.overflow = 'auto';
+        }
+        
+        function bookAppointment(country) {
+            hidePopup();
+            // Create appointment form elements
+            const form = document.createElement('div');
+            form.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center';
+            form.innerHTML = `
+                <div class="bg-white p-8 rounded-lg w-full max-w-md">
+                    <h2 class="text-2xl font-bold mb-4">Book Appointment for Study in ${country.toUpperCase()}</h2>
+                    <form id="appointmentForm">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" required class="w-full p-2 border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" required class="w-full p-2 border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Phone</label>
+                            <input type="tel" required class="w-full p-2 border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Preferred Date</label>
+                            <input type="date" required class="w-full p-2 border rounded">
+                        </div>
+                        <div class="flex justify-end space-x-4">
+                            <button type="button" onclick="this.closest('.fixed').remove()" class="px-4 py-2 bg-gray-300 rounded">Cancel</button>
+                            <button type="submit" class="px-4 py-2 bg-green-500 text-white rounded">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            `;
+            
+            form.querySelector('#appointmentForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert(`Appointment for study in ${country} has been booked! We will contact you shortly.`);
+                form.remove();
+            });
+            
+            document.body.appendChild(form);
+        }
+
+        function calculateScore(button) {
+            const form = button.closest('.bg-gray-100');
+            const academicAverage = form.querySelector('input[type="range"]') ? form.querySelector('input[type="range"]').value : null;
+            const educationLevel = form.querySelector('select:nth-of-type(1)') ? form.querySelector('select:nth-of-type(1)').value : null;
+            const languageScore = form.querySelector('select:nth-of-type(2)') ? form.querySelector('select:nth-of-type(2)').value : null;
+            const gapInStudies = form.querySelector('select:nth-of-type(3)') ? form.querySelector('select:nth-of-type(3)').value : null;
+
+            let eligibilityMessage = "Based on your inputs:\n\n";
+
+            if (academicAverage) {
+                eligibilityMessage += `Academic Average: ${academicAverage}%\n`;
+            }
+            if (educationLevel) {
+                eligibilityMessage += `Desired Study Level: ${educationLevel}\n`;
+            }
+            if (languageScore) {
+                eligibilityMessage += `English Test Score: ${languageScore}\n`;
+            }
+            if (gapInStudies) {
+                eligibilityMessage += `Gap in Studies: ${gapInStudies}\n`;
+            }
+
+            eligibilityMessage += "\nFor a personalized eligibility assessment and program recommendations, please book an appointment with us.";
+            
+            alert(eligibilityMessage);
+        }
+
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    const tabContainer = this.closest('.popup-content');
+                    
+                    // Remove active class from all buttons in this container
+                    tabContainer.querySelectorAll('.tab-btn').forEach(tb => {
+                        tb.classList.remove('active');
+                        tb.classList.add('bg-gray-200');
+                        tb.classList.remove('bg-blue-600', 'text-white');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active', 'bg-blue-600', 'text-white');
+                    this.classList.remove('bg-gray-200');
+                    
+                    // Hide all tab contents in this container
+                    tabContainer.querySelectorAll('.tab-content').forEach(tc => {
+                        tc.classList.remove('active');
+                    });
+                    
+                    // Show selected tab content
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Close popup when clicking outside content
+            const popups = document.querySelectorAll('.popup');
+            popups.forEach(popup => {
+                popup.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        hidePopup();
+                    }
+                });
+            });
+
+            // Initialize first tab as active for all popups
+            document.querySelectorAll('.popup-content').forEach(popupContent => {
+                const firstTabBtn = popupContent.querySelector('.tab-btn');
+                if (firstTabBtn) {
+                    firstTabBtn.click(); // Simulate click to activate the first tab
+                }
+            });
+        });
+        const btn = document.getElementById("teleportBtn");
+
+  function randomCorner() {
+    const corners = [
+      { top: "20px", left: "20px" },
+      { top: "20px", right: "20px" },
+      { bottom: "20px", left: "20px" },
+      { bottom: "20px", right: "20px" }
+    ];
+
+    const random = corners[Math.floor(Math.random() * corners.length)];
+
+    // Reset all positions
+    btn.style.top = "";
+    btn.style.bottom = "";
+    btn.style.left = "";
+    btn.style.right = "";
+
+    // Apply new position
+    Object.entries(random).forEach(([key, value]) => {
+      btn.style[key] = value;
+    });
+
+    // Schedule next move
+    const nextInterval = Math.floor(Math.random() * 5000) + 5000; // 5–10 sec
+    setTimeout(randomCorner, nextInterval);
+  }
+
+  // Start movement
+  randomCorner();
+
+    </script>
+<!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Scholar's Guild | <span id="currentDate"></span></p>
+    </footer>
+
+</body>
+</html>

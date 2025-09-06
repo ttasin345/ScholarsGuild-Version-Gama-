@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar's Guild - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js" defer></script>
+
+<!--favicon-->
+<link rel="icon" href="images/logo.png" type="image/png">
+
+</head>
+
+<body>
+
+     <!-- Navigation -->
+<header>
+  <nav class="navbar">
+   <a href="index.html" class="logo-link">
+  <div class="logo">
+    <img src="images/logo.png" alt="Scholar's Guild Logo" class="logo-icon">
+    <span class="logo-text">Scholar's Guild</span>
+  </div>
+</a>
+
+    <div class="nav-right">
+      <ul class="nav-tabs">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+
+      
+<a href="login.html" class="profile-btn" id="profileIcon">
+  <img src="images/user.jpg" alt="User Profile" class="profile-pic" />
+</a>
+    </div>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="global-search" role="search" aria-label="Site wide search">
+    <div class="search-box">
+      <input
+        type="search"
+        id="site-search-input"
+        placeholder="Search for Scholarships, Visa and so on"
+        autocomplete="on"
+        aria-label="Site wide search"
+      />
+      <ul id="search-results" role="listbox" tabindex="-1" aria-label="Search suggestions"></ul>
+    </div>
+  </div>
+</header>
+
+    
+    <!-- Hero Banner -->
+    <section class="hero">
+  <video autoplay muted class="bg-video" id="bgVideo"></video>
+  <div class="caption">
+    Welcome to Scholar's Guild<br />
+    <a href="contacts.html" class="cta-btn">Contact Us</a>
+  </div>
+</section>
+<!--Notice Board-->
+<div class="course-flip" id="flip-container">
+  <div class="flip-inner" id="flip-inner">
+    <div class="flip-front" id="flip-front">🧠 Advanced IELTS Tips Released!</div>
+    <div class="flip-back" id="flip-back">🚀 Duolingo Sprint Add-on Now Live!</div>
+  </div>
+</div>
+
+<!--Typewriter-Box-->
+<div id="typewriter-box" style="color:rgb(250, 250, 250); text-align:center; font-size:1.5rem; margin-top:30px;"></div>
+
+<main>
+<!--Country-Tabs-->
+<section class="preview-tabs">
+
+  <div id="country" class="tab-content active">
+    <h2>Top Study Destinations</h2>
+    <div class="country-columns">
+
+<!-------Germany--------->
+      <div class="country-column float-up">
+        <div class="country-card" data-modal-target="#germanyModal" style="background-image: url('images/germany.jpg.jpeg');">
+          <div class="overlay">Germany</div>
+        </div>
+      <!-- Modal_Germany-->
+<div id="germanyModal" class="country-modal-overlay">
+  <div class="country-modal">
+    <button class="modal-close-btn">&times;</button>
+    <div class="modal-header">
+      <img src="images/germany-banner.jpeg" alt="Germany Banner" class="modal-banner">
+      <h2 class="modal-title">Germany</h2>
+    </div>
+
+    <div class="modal-tabs-container">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="cost">Cost</button>
+        <button class="modal-tab" data-tab="weather">Weather</button>
+        <button class="modal-tab" data-tab="life">Life</button>
+        <button class="modal-tab" data-tab="universities">Universities</button>
+        <button class="modal-tab" data-tab="settlement">Settlement</button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-quick-facts">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Capital:</strong> Berlin</li>
+          <li><strong>Population:</strong> 83 million</li>
+          <li><strong>Language:</strong> German</li>
+          <li><strong>Currency:</strong> Euro (€)</li>
+          <li><strong>Tuition Fees:</strong> Free or low-cost</li>
+        </ul>
+      </div>
+            <div class="modal-tab-content active" id="overview">
+        <p>Germany offers world-class education, especially in engineering and sciences. International students benefit from low tuition and vibrant student life.</p>
+      </div>
+
+      <div class="modal-tab-content" id="cost">
+        <p>Living costs range from €700–€1,200/month depending on city. Public transport is affordable and efficient.</p>
+      </div>
+
+      <div class="modal-tab-content" id="weather">
+        <p>Germany has a temperate climate with cold winters and mild summers. Rain is evenly distributed throughout the year.</p>
+      </div>
+
+      <div class="modal-tab-content" id="life">
+        <p>Student life in Germany is rich with cultural events, travel opportunities, and affordable housing options.</p>
+      </div>
+
+      <div class="modal-tab-content" id="universities">
+        <div class="modal-university-grid">
+          <div class="modal-university-card">
+            <img src="images/tum.jpg" alt="TUM Logo">
+            <h4>Technical University of Munich</h4>
+            <p>Located in Munich, TUM is renowned for engineering, computer science, and business programs.</p>
+            <ul>
+              <li>QS Rank: Top 50</li>
+              <li>Tuition: Free</li>
+              <li>Top Courses: AI, Mechanical Engg.</li>
+            </ul>
+          </div>
+          <div class="modal-university-card">
+            <img src="images/heidelberg.jpeg" alt="Heidelberg Logo">
+            <h4>Heidelberg University</h4>
+            <p>Germany’s oldest university, known for medicine, law, and humanities.</p>
+            <ul>
+              <li>QS Rank: Top 100</li>
+              <li>Tuition: Free</li>
+              <li>Top Courses: Medicine, Philosophy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tab-content" id="settlement">
+        <p>Germany offers post-study work visas and pathways to permanent residency for skilled graduates.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="modal-cta-btn"><a href="contacts.html">Book  Appointment</a></button>
+    </div>
+  </div>
+</div>
+
+<!---------UK---------->
+
+        <div class="country-card" data-modal-target="#ukModal" style="background-image: url('images/uk.jpg.jpeg');">
+          <div class="overlay">UK</div>
+        </div>
+
+<!-- Modal -->
+<div id="ukModal" class="country-modal-overlay">
+  <div class="country-modal">
+    <button class="modal-close-btn">&times;</button>
+    <div class="modal-header">
+      <img src="images/uk-banner.jpg" alt="UK Banner" class="modal-banner">
+      <h2 class="modal-title">United Kingdom</h2>
+    </div>
+
+    <div class="modal-tabs-container">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="cost">Cost</button>
+        <button class="modal-tab" data-tab="weather">Weather</button>
+        <button class="modal-tab" data-tab="life">Life</button>
+        <button class="modal-tab" data-tab="universities">Universities</button>
+        <button class="modal-tab" data-tab="settlement">Settlement</button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-quick-facts">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Capital:</strong> London</li>
+          <li><strong>Population:</strong> 67 million</li>
+          <li><strong>Language:</strong> English</li>
+          <li><strong>Currency:</strong> Pound Sterling (£)</li>
+          <li><strong>Tuition Fees:</strong> £10,000–£38,000/year</li>
+        </ul>
+      </div>
+
+      <div class="modal-tab-content active" id="overview">
+        <p>The UK offers prestigious universities, diverse programs, and a rich academic heritage. It's a top destination for international students.</p>
+      </div>
+
+      <div class="modal-tab-content" id="cost">
+        <p>Tuition varies by course and university. Living costs range from £800–£1,500/month depending on city.</p>
+      </div>
+
+      <div class="modal-tab-content" id="weather">
+        <p>The UK has a temperate maritime climate with mild summers, cool winters, and frequent rainfall.</p>
+      </div>
+
+      <div class="modal-tab-content" id="life">
+        <p>Student life includes historic campuses, vibrant cities, cultural diversity, and access to Europe.</p>
+      </div>
+
+      <div class="modal-tab-content" id="universities">
+        <div class="modal-university-grid">
+          <div class="modal-university-card">
+            <img src="images/oxford.jpg" alt="Oxford">
+            <h4>University of Oxford</h4>
+            <p>Oldest university in the English-speaking world, renowned for humanities and sciences.</p>
+            <ul>
+              <li>QS Rank: Top 5</li>
+              <li>Tuition: £25,000/year</li>
+              <li>Top Courses: PPE, Medicine, Law</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/cambridge.jpg" alt="Cambridge">
+            <h4>University of Cambridge</h4>
+            <p>Historic rival to Oxford, known for mathematics, engineering, and literature.</p>
+            <ul>
+              <li>QS Rank: Top 5</li>
+              <li>Tuition: £24,000/year</li>
+              <li>Top Courses: Engineering, Math, English</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/imperial.jpg" alt="Imperial">
+            <h4>Imperial College London</h4>
+            <p>STEM-focused university in London with cutting-edge research and innovation.</p>
+            <ul>
+              <li>QS Rank: Top 10</li>
+              <li>Tuition: £30,000/year</li>
+              <li>Top Courses: AI, Medicine, Physics</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/ucl.jpeg" alt="UCL">
+            <h4>University College London</h4>
+            <p>Multidisciplinary university with global reach and strong research output.</p>
+            <ul>
+              <li>QS Rank: Top 10</li>
+              <li>Tuition: £22,000/year</li>
+              <li>Top Courses: Architecture, Law, Neuroscience</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/edinburgh.jpeg" alt="Edinburgh">
+            <h4>University of Edinburgh</h4>
+            <p>Scottish university with strengths in medicine, literature, and informatics.</p>
+            <ul>
+              <li>QS Rank: Top 20</li>
+              <li>Tuition: £20,000/year</li>
+              <li>Top Courses: Medicine, Literature</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/manchester.jpeg" alt="Manchester">
+            <h4>University of Manchester</h4>
+            <p>Large research university with strong engineering, business, and humanities programs.</p>
+            <ul>
+              <li>QS Rank: Top 30</li>
+              <li>Tuition: £19,000/year</li>
+              <li>Top Courses: Engineering, Business</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/warwick.jpeg" alt="Warwick">
+            <h4>University of Warwick</h4>
+            <p>Modern campus university with strengths in economics, business, and mathematics.</p>
+            <ul>
+              <li>QS Rank: Top 60</li>
+              <li>Tuition: £18,000/year</li>
+              <li>Top Courses: Economics, Math</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/bristol.jpeg" alt="Bristol">
+            <h4>University of Bristol</h4>
+            <p>Russell Group university with strong engineering and law programs.</p>
+            <ul>
+              <li>QS Rank: Top 70</li>
+              <li>Tuition: £20,000/year</li>
+              <li>Top Courses: Law, Engineering</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/glasgow.jpeg" alt="Glasgow">
+            <h4>University of Glasgow</h4>
+            <p>Scottish university with historic campus and strengths in health sciences.</p>
+            <ul>
+              <li>QS Rank: Top 80</li>
+              <li>Tuition: £17,000/year</li>
+              <li>Top Courses: Medicine, Public Health</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/nottingham.jpeg" alt="Nottingham">
+            <h4>University of Nottingham</h4>
+            <p>Global university with campuses in UK, China, and Malaysia. Strong in pharmacy and law.</p>
+            <ul>
+              <li>QS Rank: Top 100</li>
+              <li>Tuition: £16,000/year</li>
+              <li>Top Courses: Pharmacy, Law</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tab-content" id="settlement">
+        <p>UK offers Graduate Route visa for 2 years post-study work, with options for skilled migration.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="modal-cta-btn"><a href="contacts.html">Book  Appointment</a></button>
+    </div>
+  </div>
+</div>
+  <!---------USA---------->
+        <div class="country-card" data-modal-target="#usaModal" style="background-image: url('images/usa.jpg.jpeg');">
+          <div class="overlay">USA</div>
+        </div>
+
+<!-- Modal -->
+<div id="usaModal" class="country-modal-overlay">
+  <div class="country-modal">
+    <button class="modal-close-btn">&times;</button>
+    <div class="modal-header">
+      <img src="images/usa.jpg" alt="USA Banner" class="modal-banner">
+      <h2 class="modal-title">USA</h2>
+    </div>
+
+    <div class="modal-tabs-container">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="cost">Cost</button>
+        <button class="modal-tab" data-tab="weather">Weather</button>
+        <button class="modal-tab" data-tab="life">Life</button>
+        <button class="modal-tab" data-tab="universities">Universities</button>
+        <button class="modal-tab" data-tab="settlement">Settlement</button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-quick-facts">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Capital:</strong> Washington, D.C.</li>
+          <li><strong>Population:</strong> 331 million</li>
+          <li><strong>Language:</strong> English</li>
+          <li><strong>Currency:</strong> US Dollar ($)</li>
+          <li><strong>Tuition Fees:</strong> $20,000–$60,000/year</li>
+        </ul>
+      </div>
+
+      <div class="modal-tab-content active" id="overview">
+        <p>The USA is home to many of the world’s top universities, offering diverse programs and cutting-edge research opportunities.</p>
+      </div>
+
+      <div class="modal-tab-content" id="cost">
+        <p>Tuition varies widely. Living costs range from $1,000–$2,500/month depending on city and lifestyle.</p>
+      </div>
+
+      <div class="modal-tab-content" id="weather">
+        <p>Climate varies by region: cold winters in the north, warm and humid in the south, and temperate on the coasts.</p>
+      </div>
+
+      <div class="modal-tab-content" id="life">
+        <p>Student life is vibrant, with access to cultural events, sports, internships, and global networking.</p>
+      </div>
+
+      <div class="modal-tab-content" id="universities">
+        <div class="modal-university-grid">
+          <div class="modal-university-card">
+            <img src="images/harvard.jpg" alt="Harvard">
+            <h4>Harvard University</h4>
+            <p>Located in Cambridge, MA. Ivy League leader in law, medicine, and business.</p>
+            <ul>
+              <li>QS Rank: Top 5</li>
+              <li>Tuition: $55,000/year</li>
+              <li>Top Courses: Law, Business, Medicine</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/mit.jpeg" alt="MIT">
+            <h4>MIT</h4>
+            <p>Massachusetts Institute of Technology, world-renowned for engineering and computer science.</p>
+            <ul>
+              <li>QS Rank: #1</li>
+              <li>Tuition: $53,000/year</li>
+              <li>Top Courses: AI, Robotics, Physics</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/stanford.jpeg" alt="Stanford">
+            <h4>Stanford University</h4>
+            <p>Located in California’s Silicon Valley, known for innovation and entrepreneurship.</p>
+            <ul>
+              <li>QS Rank: Top 5</li>
+              <li>Tuition: $56,000/year</li>
+              <li>Top Courses: CS, Business, Design</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/bakerley.jpg" alt="UC Berkeley">
+            <h4>UC Berkeley</h4>
+            <p>Public Ivy in California, strong in sciences, humanities, and social impact.</p>
+            <ul>
+              <li>QS Rank: Top 30</li>
+              <li>Tuition: $45,000/year</li>
+              <li>Top Courses: Biology, Economics</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/columbia.jpeg" alt="Columbia">
+            <h4>Columbia University</h4>
+            <p>New York-based Ivy League school with global reach and elite programs.</p>
+            <ul>
+              <li>QS Rank: Top 20</li>
+              <li>Tuition: $60,000/year</li>
+              <li>Top Courses: Journalism, Law</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/ucla.jpeg" alt="UCLA">
+            <h4>University of California, Los Angeles</h4>
+            <p>Top-ranked public university with strong arts, film, and health sciences.</p>
+            <ul>
+              <li>QS Rank: Top 40</li>
+              <li>Tuition: $40,000/year</li>
+              <li>Top Courses: Film, Psychology</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/nyu.jpeg" alt="NYU">
+            <h4>New York University</h4>
+            <p>Urban campus in NYC, known for arts, business, and global programs.</p>
+            <ul>
+              <li>QS Rank: Top 30</li>
+              <li>Tuition: $52,000/year</li>
+              <li>Top Courses: Performing Arts, Finance</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/chicago.jpeg" alt="UChicago">
+            <h4>University of Chicago</h4>
+            <p>Elite private university with strengths in economics, law, and philosophy.</p>
+            <ul>
+              <li>QS Rank: Top 10</li>
+              <li>Tuition: $58,000/year</li>
+              <li>Top Courses: Economics, Law</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/michigan.jpeg" alt="Duke">
+            <h4>Duke University</h4>
+            <p>Located in North Carolina, strong in medicine, public policy, and engineering.</p>
+            <ul>
+              <li>QS Rank: Top 25</li>
+              <li>Tuition: $57,000/year</li>
+              <li>Top Courses: Medicine, Policy</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/michigan.jpeg" alt="University of Michigan">
+            <h4>University of Michigan</h4>
+            <p>Top public university with strong research and global alumni network.</p>
+            <ul>
+              <li>QS Rank: Top 30</li>
+              <li>Tuition: $45,000/year</li>
+              <li>Top Courses: Engineering, Business</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tab-content" id="settlement">
+        <p>USA offers Optional Practical Training (OPT) and H-1B visa pathways for graduates.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="modal-cta-btn"><a href="contacts.html">Book  Appointment</a></button>
+    </div>
+  </div>
+</div>
+
+<!-------Denmark-------->
+        <div class="country-card" data-modal-target="#denmarkModal" style="background-image: url('images/denmark.jpg.jpeg');">
+          <div class="overlay">Denmark</div>
+        </div>
+      </div>
+
+<!-- Modal -->
+<div id="denmarkModal" class="country-modal-overlay">
+  <div class="country-modal">
+    <button class="modal-close-btn">&times;</button>
+    <div class="modal-header">
+      <img src="images/denmark-banner.jpg" alt="Denmark Banner" class="modal-banner">
+      <h2 class="modal-title">Denmark</h2>
+    </div>
+
+    <div class="modal-tabs-container">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="cost">Cost</button>
+        <button class="modal-tab" data-tab="weather">Weather</button>
+        <button class="modal-tab" data-tab="life">Life</button>
+        <button class="modal-tab" data-tab="universities">Universities</button>
+        <button class="modal-tab" data-tab="settlement">Settlement</button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-quick-facts">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Capital:</strong> Copenhagen</li>
+          <li><strong>Population:</strong> 5.9 million</li>
+          <li><strong>Language:</strong> Danish (English widely spoken)</li>
+          <li><strong>Currency:</strong> Danish Krone (DKK)</li>
+          <li><strong>Tuition Fees:</strong> €6,000–16,000/year</li>
+        </ul>
+      </div>
+
+      <div class="modal-tab-content active" id="overview">
+        <p>Denmark offers world-class education, innovative teaching methods, and a strong focus on sustainability and design. English-taught programs are widely available.</p>
+      </div>
+
+      <div class="modal-tab-content" id="cost">
+        <p>Tuition is free for EU/EEA students. Non-EU students pay €6,000–16,000/year. Living costs average €800–1,200/month.</p>
+      </div>
+
+      <div class="modal-tab-content" id="weather">
+        <p>Denmark has a temperate climate with cool summers and mild winters. Expect rain and wind year-round, but cozy indoor culture makes up for it.</p>
+      </div>
+
+      <div class="modal-tab-content" id="life">
+        <p>Student life is relaxed and inclusive. Denmark ranks high in happiness, safety, and sustainability. Biking culture and hygge vibes are everywhere.</p>
+      </div>
+
+      <div class="modal-tab-content" id="universities">
+        <div class="modal-university-grid">
+          <div class="modal-university-card">
+            <img src="images/copenhagen.jpeg" alt="Copenhagen">
+            <h4>University of Copenhagen</h4>
+            <p>Denmark’s oldest and largest university, strong in humanities, science, and law.</p>
+            <ul>
+              <li>QS Rank: Top 100</li>
+              <li>Tuition: €10,000/year</li>
+              <li>Top Courses: Law, Biology, Philosophy</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/aarhus.jpeg" alt="Aarhus">
+            <h4>Aarhus University</h4>
+            <p>Research-intensive university with strengths in economics, engineering, and health.</p>
+            <ul>
+              <li>QS Rank: Top 150</li>
+              <li>Tuition: €9,000/year</li>
+              <li>Top Courses: Economics, Engineering</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/dtudk.jpeg" alt="DTU">
+            <h4>Technical University of Denmark (DTU)</h4>
+            <p>Top tech university focused on engineering, innovation, and sustainability.</p>
+            <ul>
+              <li>QS Rank: Top 150</li>
+              <li>Tuition: €13,000/year</li>
+              <li>Top Courses: Robotics, Energy Tech</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/roskilde.jpeg" alt="Roskilde">
+            <h4>Roskilde University</h4>
+            <p>Known for interdisciplinary studies and project-based learning.</p>
+            <ul>
+              <li>QS Rank: Top 800</li>
+              <li>Tuition: €8,000/year</li>
+              <li>Top Courses: Social Sci, Communication</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/southern.jpeg" alt="Southern Denmark">
+            <h4>University of Southern Denmark</h4>
+            <p>Strong in health sciences, engineering, and business.</p>
+            <ul>
+              <li>QS Rank: Top 400</li>
+              <li>Tuition: €9,000/year</li>
+              <li>Top Courses: Public Health, Mechatronics</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/aalborg.jpeg" alt="Aalborg">
+            <h4>Aalborg University</h4>
+            <p>Project-based learning and strong industry ties in tech and design.</p>
+            <ul>
+              <li>QS Rank: Top 300</li>
+              <li>Tuition: €8,500/year</li>
+              <li>Top Courses: Architecture, IT</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/itu.jpeg" alt="ITU">
+            <h4>IT University of Copenhagen</h4>
+            <p>Specialized in digital design, data science, and software development.</p>
+            <ul>
+              <li>QS Rank: N/A</li>
+              <li>Tuition: €12,000/year</li>
+              <li>Top Courses: Data Sci, UX Design</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/businessacademy.jpeg" alt="Business Academy">
+            <h4>Business Academy Aarhus</h4>
+            <p>Applied sciences institution focused on business, IT, and marketing.</p>
+            <ul>
+              <li>QS Rank: N/A</li>
+              <li>Tuition: €7,000/year</li>
+              <li>Top Courses: Marketing, Web Dev</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/kea.jpeg" alt="KEA">
+            <h4>Copenhagen School of Design and Technology (KEA)</h4>
+            <p>Specialized in design, tech, and entrepreneurship.</p>
+            <ul>
+              <li>QS Rank: N/A</li>
+              <li>Tuition: €9,000/year</li>
+              <li>Top Courses: UX, Innovation</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/via.jpeg" alt="VIA">
+            <h4>VIA University College</h4>
+            <p>Focus on applied sciences, education, and health.</p>
+            <ul>
+              <li>QS Rank: N/A</li>
+              <li>Tuition: €7,500/year</li>
+              <li>Top Courses: Nursing, Education</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tab-content" id="settlement">
+        <p>Denmark offers post-study work permits and PR options via the Pay Limit Scheme and Positive List. English proficiency and job offers help secure long-term stay.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="modal-cta-btn"><a href="contacts.html">Book  Appointment</a></button>
+    </div>
+  </div>
+</div>
+<!--------Canada--------->
+      <div class="country-column float-down">
+        <div class="country-card" data-modal-target="#canadaModal" style="background-image: url('images/canada.jpg.jpeg');">
+          <div class="overlay">Canada</div>
+        </div>
+
+<!-- Modal -->
+<div id="canadaModal" class="country-modal-overlay">
+  <div class="country-modal">
+    <button class="modal-close-btn">&times;</button>
+    <div class="modal-header">
+      <img src="images/canada-banner.jpg" alt="Canada Banner" class="modal-banner">
+      <h2 class="modal-title">Canada</h2>
+    </div>
+
+    <div class="modal-tabs-container">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="cost">Cost</button>
+        <button class="modal-tab" data-tab="weather">Weather</button>
+        <button class="modal-tab" data-tab="life">Life</button>
+        <button class="modal-tab" data-tab="universities">Universities</button>
+        <button class="modal-tab" data-tab="settlement">Settlement</button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-quick-facts">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Capital:</strong> Ottawa</li>
+          <li><strong>Population:</strong> 39 million</li>
+          <li><strong>Language:</strong> English & French</li>
+          <li><strong>Currency:</strong> Canadian Dollar (CAD)</li>
+          <li><strong>Tuition Fees:</strong> CAD 15,000–35,000/year</li>
+        </ul>
+      </div>
+
+      <div class="modal-tab-content active" id="overview">
+        <p>Canada is known for high-quality education, multicultural campuses, and generous post-study work options. It’s a top choice for international students.</p>
+      </div>
+
+      <div class="modal-tab-content" id="cost">
+        <p>Tuition varies by province and program. Living costs range from CAD 800–1,500/month depending on city.</p>
+      </div>
+
+      <div class="modal-tab-content" id="weather">
+        <p>Canada has diverse climates: cold winters in most regions, mild on the west coast, and warm summers across the country.</p>
+      </div>
+
+      <div class="modal-tab-content" id="life">
+        <p>Student life includes safe cities, nature access, cultural diversity, and strong support for newcomers.</p>
+      </div>
+
+      <div class="modal-tab-content" id="universities">
+        <div class="modal-university-grid">
+          <div class="modal-university-card">
+            <img src="images/toronto.jpeg" alt="Toronto">
+            <h4>University of Toronto</h4>
+            <p>Canada’s top-ranked university, strong in research, medicine, and engineering.</p>
+            <ul>
+              <li>QS Rank: Top 20</li>
+              <li>Tuition: CAD 35,000/year</li>
+              <li>Top Courses: Medicine, CS, Law</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/ubc.jpeg" alt="UBC">
+            <h4>University of British Columbia</h4>
+            <p>Vancouver-based university with strengths in sustainability, tech, and global studies.</p>
+            <ul>
+              <li>QS Rank: Top 40</li>
+              <li>Tuition: CAD 30,000/year</li>
+              <li>Top Courses: Forestry, CS, Intl Relations</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/mcgill.jpeg" alt="McGill">
+            <h4>McGill University</h4>
+            <p>Montreal-based, bilingual university known for medicine, law, and arts.</p>
+            <ul>
+              <li>QS Rank: Top 30</li>
+              <li>Tuition: CAD 28,000/year</li>
+              <li>Top Courses: Medicine, Law, Music</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/waterloo.jpeg" alt="Waterloo">
+            <h4>University of Waterloo</h4>
+            <p>Leader in co-op education, engineering, and computer science.</p>
+            <ul>
+              <li>QS Rank: Top 150</li>
+              <li>Tuition: CAD 25,000/year</li>
+              <li>Top Courses: CS, Engineering, Math</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/alberta.jpg" alt="Alberta">
+            <h4>University of Alberta</h4>
+            <p>Strong in energy research, agriculture, and health sciences.</p>
+            <ul>
+              <li>QS Rank: Top 110</li>
+              <li>Tuition: CAD 22,000/year</li>
+              <li>Top Courses: Petroleum Engg, Nursing</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/mcmaster.jpeg" alt="McMaster">
+            <h4>McMaster University</h4>
+            <p>Hamilton-based university with strengths in health sciences and business.</p>
+            <ul>
+              <li>QS Rank: Top 140</li>
+              <li>Tuition: CAD 24,000/year</li>
+              <li>Top Courses: Health Sci, MBA</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/calgary.jpg" alt="Calgary">
+            <h4>University of Calgary</h4>
+            <p>Located in Alberta, known for energy, business, and environmental studies.</p>
+            <ul>
+              <li>QS Rank: Top 250</li>
+              <li>Tuition: CAD 20,000/year</li>
+              <li>Top Courses: Geoscience, Finance</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/dalhousie.jpeg" alt="Dalhousie">
+            <h4>Dalhousie University</h4>
+            <p>East coast university with strong marine biology and law programs.</p>
+            <ul>
+              <li>QS Rank: Top 300</li>
+              <li>Tuition: CAD 18,000/year</li>
+              <li>Top Courses: Marine Bio, Law</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/ottawa.jpeg" alt="Ottawa">
+            <h4>University of Ottawa</h4>
+            <p>Bilingual university in the capital, strong in public policy and law.</p>
+            <ul>
+              <li>QS Rank: Top 250</li>
+              <li>Tuition: CAD 21,000/year</li>
+              <li>Top Courses: Law, Intl Affairs</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/york.jpeg" alt="York">
+            <h4>York University</h4>
+            <p>Toronto-based university with strengths in business, arts, and social sciences.</p>
+            <ul>
+              <li>QS Rank: Top 400</li>
+              <li>Tuition: CAD 19,000/year</li>
+              <li>Top Courses: Business, Psychology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tab-content" id="settlement">
+        <p>Canada offers PGWP (Post-Graduation Work Permit) and PR pathways through Express Entry and PNPs.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="modal-cta-btn"><a href="contacts.html">Book  Appointment</a></button>
+    </div>
+  </div>
+</div>
+<!--------Australia------->
+        <div class="country-card" data-modal-target="#australiaModal" style="background-image: url('images/australia.jpg.jpeg');">
+          <div class="overlay">Australia</div>
+        </div>
+
+<!-- Modal -->
+<div id="australiaModal" class="country-modal-overlay">
+  <div class="country-modal">
+    <button class="modal-close-btn">&times;</button>
+    <div class="modal-header">
+      <img src="images/australia-banner.jpg" alt="Australia Banner" class="modal-banner">
+      <h2 class="modal-title">Australia</h2>
+    </div>
+
+    <div class="modal-tabs-container">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="cost">Cost</button>
+        <button class="modal-tab" data-tab="weather">Weather</button>
+        <button class="modal-tab" data-tab="life">Life</button>
+        <button class="modal-tab" data-tab="universities">Universities</button>
+        <button class="modal-tab" data-tab="settlement">Settlement</button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-quick-facts">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Capital:</strong> Canberra</li>
+          <li><strong>Population:</strong> 26 million</li>
+          <li><strong>Language:</strong> English</li>
+          <li><strong>Currency:</strong> Australian Dollar (AUD)</li>
+          <li><strong>Tuition Fees:</strong> AUD 20,000–45,000/year</li>
+        </ul>
+      </div>
+
+      <div class="modal-tab-content active" id="overview">
+        <p>Australia is a top destination for international students, offering high-quality education, vibrant cities, and generous post-study work options.</p>
+      </div>
+
+      <div class="modal-tab-content" id="cost">
+        <p>Tuition ranges from AUD 20,000–45,000/year. Living costs average AUD 1,200–2,000/month depending on city and lifestyle.</p>
+      </div>
+
+      <div class="modal-tab-content" id="weather">
+        <p>Australia has diverse climates: tropical in the north, temperate in the south, and desert in the interior. Most cities enjoy warm summers and mild winters.</p>
+      </div>
+
+      <div class="modal-tab-content" id="life">
+        <p>Student life includes beach culture, outdoor activities, multicultural communities, and strong support for international students.</p>
+      </div>
+
+      <div class="modal-tab-content" id="universities">
+        <div class="modal-university-grid">
+          <div class="modal-university-card">
+            <img src="images/melbourne.jpeg" alt="Melbourne">
+            <h4>University of Melbourne</h4>
+            <p>Australia’s top-ranked university, strong in medicine, law, and arts.</p>
+            <ul>
+              <li>QS Rank: Top 15</li>
+              <li>Tuition: AUD 45,000/year</li>
+              <li>Top Courses: Medicine, Law, Psychology</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/sydney.jpeg" alt="Sydney">
+            <h4>University of Sydney</h4>
+            <p>Historic university with strengths in health sciences, engineering, and business.</p>
+            <ul>
+              <li>QS Rank: Top 20</li>
+              <li>Tuition: AUD 43,000/year</li>
+              <li>Top Courses: Nursing, Engineering, MBA</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/anu.jpeg" alt="ANU">
+            <h4>Australian National University (ANU)</h4>
+            <p>Located in Canberra, known for research and public policy.</p>
+            <ul>
+              <li>QS Rank: Top 30</li>
+              <li>Tuition: AUD 42,000/year</li>
+              <li>Top Courses: Intl Relations, Physics</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/unsw.jpeg" alt="UNSW">
+            <h4>University of New South Wales (UNSW)</h4>
+            <p>Tech-focused university with strong ties to industry.</p>
+            <ul>
+              <li>QS Rank: Top 20</li>
+              <li>Tuition: AUD 40,000/year</li>
+              <li>Top Courses: CS, Engineering, Law</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/uq.png" alt="UQ">
+            <h4>University of Queensland (UQ)</h4>
+            <p>Brisbane-based university with strengths in science and business.</p>
+            <ul>
+              <li>QS Rank: Top 50</li>
+              <li>Tuition: AUD 38,000/year</li>
+              <li>Top Courses: Biotech, Finance</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/monash.jpeg" alt="Monash">
+            <h4>Monash University</h4>
+            <p>Melbourne-based, known for pharmacy, engineering, and global campuses.</p>
+            <ul>
+              <li>QS Rank: Top 40</li>
+              <li>Tuition: AUD 39,000/year</li>
+              <li>Top Courses: Pharmacy, Engg</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/curtin.jpeg" alt="Curtin">
+            <h4>Curtin University</h4>
+            <p>Perth-based, strong in mining, health, and media studies.</p>
+            <ul>
+              <li>QS Rank: Top 200</li>
+              <li>Tuition: AUD 30,000/year</li>
+              <li>Top Courses: Geology, Journalism</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/macquarie.jpeg" alt="Macquarie">
+            <h4>Macquarie University</h4>
+            <p>Located in Sydney, known for business, linguistics, and psychology.</p>
+            <ul>
+              <li>QS Rank: Top 250</li>
+              <li>Tuition: AUD 32,000/year</li>
+              <li>Top Courses: Business, Linguistics</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/rmit.jpeg" alt="RMIT">
+            <h4>RMIT University</h4>
+            <p>Tech and design-focused university in Melbourne.</p>
+            <ul>
+              <li>QS Rank: Top 150</li>
+              <li>Tuition: AUD 35,000/year</li>
+              <li>Top Courses: Design, IT</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/deakin.jpeg" alt="Deakin">
+            <h4>Deakin University</h4>
+            <p>Known for education, health sciences, and online learning.</p>
+            <ul>
+              <li>QS Rank: Top 300</li>
+              <li>Tuition: AUD 30,000/year</li>
+              <li>Top Courses: Education, Nutrition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tab-content" id="settlement">
+        <p>Australia offers Temporary Graduate Visas (subclass 485) and PR pathways via skilled migration. Work experience and English proficiency are key.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="modal-cta-btn"><a href="contacts.html">Book  Appointment</a></button>
+    </div>
+  </div>
+</div>
+<!-------Austria---------->
+        <div class="country-card" data-modal-target="#austriaModal" style="background-image: url('images/austria.jpg.jpeg');">
+          <div class="overlay">Austria</div>
+        </div>
+
+<!-- Modal -->
+<div id="austriaModal" class="country-modal-overlay">
+  <div class="country-modal">
+    <button class="modal-close-btn">&times;</button>
+    <div class="modal-header">
+      <img src="images/austria-banner.jpg" alt="Austria Banner" class="modal-banner">
+      <h2 class="modal-title">Austria</h2>
+    </div>
+
+    <div class="modal-tabs-container">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="cost">Cost</button>
+        <button class="modal-tab" data-tab="weather">Weather</button>
+        <button class="modal-tab" data-tab="life">Life</button>
+        <button class="modal-tab" data-tab="universities">Universities</button>
+        <button class="modal-tab" data-tab="settlement">Settlement</button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-quick-facts">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Capital:</strong> Vienna</li>
+          <li><strong>Population:</strong> 9 million</li>
+          <li><strong>Language:</strong> German (English widely spoken)</li>
+          <li><strong>Currency:</strong> Euro (€)</li>
+          <li><strong>Tuition Fees:</strong> €1,500–7,000/year</li>
+        </ul>
+      </div>
+
+      <div class="modal-tab-content active" id="overview">
+        <p>Austria offers high-quality education, low tuition fees, and a rich cultural experience. Many programs are available in English, especially at the master’s level.</p>
+      </div>
+
+      <div class="modal-tab-content" id="cost">
+        <p>Public universities charge around €1,500/year for non-EU students. Private universities may cost €5,000–7,000/year. Living costs average €800–1,200/month.</p>
+      </div>
+
+      <div class="modal-tab-content" id="weather">
+        <p>Austria has a temperate alpine climate with cold winters and warm summers. Snow is common in winter, especially in mountainous regions.</p>
+      </div>
+
+      <div class="modal-tab-content" id="life">
+        <p>Student life includes historic cities, vibrant arts scenes, and access to skiing, hiking, and music festivals. Vienna is consistently ranked among the world’s most livable cities.</p>
+      </div>
+
+      <div class="modal-tab-content" id="universities">
+        <div class="modal-university-grid">
+          <div class="modal-university-card">
+            <img src="images/vienna.jpeg" alt="Vienna">
+            <h4>University of Vienna</h4>
+            <p>Austria’s oldest university, strong in humanities, law, and social sciences.</p>
+            <ul>
+              <li>QS Rank: Top 150</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: History, Law, Sociology</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/tuvienna.jpeg" alt="TU Vienna">
+            <h4>Vienna University of Technology (TU Wien)</h4>
+            <p>Leading tech university with strengths in engineering and computer science.</p>
+            <ul>
+              <li>QS Rank: Top 200</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: CS, Electrical Engg</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/graz.jpeg" alt="Graz">
+            <h4>University of Graz</h4>
+            <p>Strong in law, environmental science, and humanities.</p>
+            <ul>
+              <li>QS Rank: Top 300</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: Law, Env Sci</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/tugraz.jpeg" alt="TU Graz">
+            <h4>Graz University of Technology (TU Graz)</h4>
+            <p>Focused on engineering, physics, and IT.</p>
+            <ul>
+              <li>QS Rank: Top 300</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: Mech Engg, CS</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/innsbruck.jpg" alt="Innsbruck">
+            <h4>University of Innsbruck</h4>
+            <p>Located in the Alps, strong in natural sciences and tourism studies.</p>
+            <ul>
+              <li>QS Rank: Top 300</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: Physics, Tourism</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/klagenfurt.jpeg" alt="Klagenfurt">
+            <h4>University of Klagenfurt</h4>
+            <p>Modern university with strengths in media, business, and tech.</p>
+            <ul>
+              <li>QS Rank: Top 500</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: Media, Business</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/salzburg.jpeg" alt="Salzburg">
+            <h4>University of Salzburg</h4>
+            <p>Strong in theology, cultural studies, and natural sciences.</p>
+            <ul>
+              <li>QS Rank: Top 500</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: Theology, Biology</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/jku.jpeg" alt="JKU">
+            <h4>Johannes Kepler University Linz (JKU)</h4>
+            <p>Known for business, law, and STEM programs.</p>
+            <ul>
+              <li>QS Rank: Top 500</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: Law, CS, Economics</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/mozarteum.jpg" alt="Mozarteum">
+            <h4>University Mozarteum Salzburg</h4>
+            <p>Specialized in music and performing arts.</p>
+            <ul>
+              <li>QS Rank: N/A</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: Music, Composition</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/boku.jpeg" alt="BOKU">
+            <h4>University of Natural Resources and Life Sciences (BOKU)</h4>
+            <p>Focused on sustainability, agriculture, and environmental science.</p>
+            <ul>
+              <li>QS Rank: Top 400</li>
+              <li>Tuition: €1,500/year</li>
+              <li>Top Courses: Env Sci, Agri Tech</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tab-content" id="settlement">
+        <p>Austria offers post-study work permits and PR options via the Red-White-Red Card. German proficiency and job offers improve long-term prospects.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="modal-cta-btn"><a href="contacts.html">Book  Appointment</a></button>
+    </div>
+  </div>
+</div>
+<!-------Netherlands------->
+        <div class="country-card" data-modal-target="#netherlandsModal" style="background-image: url('images/netherlands.jpg.jpeg');">
+          <div class="overlay">Netherlands</div>
+        </div>
+
+<!-- Modal -->
+<div id="netherlandsModal" class="country-modal-overlay">
+  <div class="country-modal">
+    <button class="modal-close-btn">&times;</button>
+    <div class="modal-header">
+      <img src="images/netherlans-banner.jpg" alt="Netherlands Banner" class="modal-banner">
+      <h2 class="modal-title">Netherlands</h2>
+    </div>
+
+    <div class="modal-tabs-container">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="cost">Cost</button>
+        <button class="modal-tab" data-tab="weather">Weather</button>
+        <button class="modal-tab" data-tab="life">Life</button>
+        <button class="modal-tab" data-tab="universities">Universities</button>
+        <button class="modal-tab" data-tab="settlement">Settlement</button>
+      </div>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-quick-facts">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Capital:</strong> Amsterdam</li>
+          <li><strong>Population:</strong> 17.5 million</li>
+          <li><strong>Language:</strong> Dutch (English widely spoken)</li>
+          <li><strong>Currency:</strong> Euro (€)</li>
+          <li><strong>Tuition Fees:</strong> €6,000–20,000/year</li>
+        </ul>
+      </div>
+
+      <div class="modal-tab-content active" id="overview">
+        <p>The Netherlands is known for innovative education, English-taught programs, and a welcoming international environment. It’s a top choice for STEM, business, and social sciences.</p>
+      </div>
+
+      <div class="modal-tab-content" id="cost">
+        <p>Tuition ranges from €6,000–20,000/year. Living costs average €900–1,400/month depending on city and lifestyle.</p>
+      </div>
+
+      <div class="modal-tab-content" id="weather">
+        <p>Temperate maritime climate with mild summers and cool, wet winters. Expect frequent rain and cloudy skies, but cities are vibrant year-round.</p>
+      </div>
+
+      <div class="modal-tab-content" id="life">
+        <p>Student life includes bike-friendly cities, diverse communities, and strong support for international students. Dutch culture values independence and directness.</p>
+      </div>
+
+      <div class="modal-tab-content" id="universities">
+        <div class="modal-university-grid">
+          <div class="modal-university-card">
+            <img src="images/uva.jpeg" alt="UvA">
+            <h4>University of Amsterdam (UvA)</h4>
+            <p>Top-ranked university with strengths in humanities, law, and economics.</p>
+            <ul>
+              <li>QS Rank: Top 60</li>
+              <li>Tuition: €12,000/year</li>
+              <li>Top Courses: Law, Economics, Psychology</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/tudelft.jpg" alt="TU Delft">
+            <h4>Delft University of Technology (TU Delft)</h4>
+            <p>Leading tech university with strengths in engineering and design.</p>
+            <ul>
+              <li>QS Rank: Top 50</li>
+              <li>Tuition: €15,000/year</li>
+              <li>Top Courses: Mech Engg, Architecture</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/leiden.jpeg" alt="Leiden">
+            <h4>Leiden University</h4>
+            <p>Historic university known for law, medicine, and international relations.</p>
+            <ul>
+              <li>QS Rank: Top 120</li>
+              <li>Tuition: €13,000/year</li>
+              <li>Top Courses: Intl Law, Medicine</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/erasmus.jpg" alt="Erasmus">
+            <h4>Erasmus University Rotterdam</h4>
+            <p>Strong in business, economics, and social sciences.</p>
+            <ul>
+              <li>QS Rank: Top 100</li>
+              <li>Tuition: €14,000/year</li>
+              <li>Top Courses: MBA, Sociology</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/utwente.jpeg" alt="Twente">
+            <h4>University of Twente</h4>
+            <p>Tech-focused university with strengths in robotics and entrepreneurship.</p>
+            <ul>
+              <li>QS Rank: Top 200</li>
+              <li>Tuition: €11,000/year</li>
+              <li>Top Courses: Robotics, Business</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/radboud.jpeg" alt="Radboud">
+            <h4>Radboud University</h4>
+            <p>Strong in neuroscience, philosophy, and environmental studies.</p>
+            <ul>
+              <li>QS Rank: Top 150</li>
+              <li>Tuition: €10,000/year</li>
+              <li>Top Courses: Neurosci, Philosophy</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/tilburg.jpeg" alt="Tilburg">
+            <h4>Tilburg University</h4>
+            <p>Known for economics, law, and data science.</p>
+            <ul>
+              <li>QS Rank: Top 250</li>
+              <li>Tuition: €9,000/year</li>
+              <li>Top Courses: Data Sci, Law</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/maastricht.jpeg" alt="Maastricht">
+            <h4>Maastricht University</h4>
+            <p>Innovative teaching methods and strong international focus.</p>
+            <ul>
+              <li>QS Rank: Top 200</li>
+              <li>Tuition: €10,000/year</li>
+              <li>Top Courses: Intl Business, Medicine</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/vu.jpeg" alt="VU">
+            <h4>Vrije Universiteit Amsterdam (VU)</h4>
+            <p>Strong in life sciences, theology, and business.</p>
+            <ul>
+              <li>QS Rank: Top 150</li>
+              <li>Tuition: €12,000/year</li>
+              <li>Top Courses: Biomed, Theology</li>
+            </ul>
+          </div>
+
+          <div class="modal-university-card">
+            <img src="images/wageningen.jpeg" alt="Wageningen">
+            <h4>Wageningen University & Research</h4>
+            <p>World leader in agriculture, food, and environmental science.</p>
+            <ul>
+              <li>QS Rank: Top 125</li>
+              <li>Tuition: €18,000/year</li>
+              <li>Top Courses: Agri Sci, Food Tech</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-tab-content" id="settlement">
+        <p>The Netherlands offers post-study work permits and PR options via the Orientation Year Visa and Highly Skilled Migrant program. English fluency and job offers are key.</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="modal-cta-btn"><a href="contacts.html">Book  Appointment</a></button>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+
+<!--Course Tabs-->
+<div id="course" class="tab-content">
+  <h2 aria-sort="centre">Prep Course Tracks</h2>
+  <div class="course-columns">
+
+    <div id="ielts-slingshot" class="flow-card prep with-bg" style="background-image: url('images/ielts-slingshot.jpeg');">
+      <div class="card-content">
+        <h3>IELTS Slingshot</h3>
+        <p class="desc">Fast-paced strategy for Academic & General modules.</p>
+        <ul class="topics">
+          <li>Timed writing drills</li>
+          <li>Listening tactics</li>
+          <li>Band-boosting hacks</li>
+        </ul>
+        <button class="explore-btn"><a href="contacts.html">Explore Now</a></button>
+      </div>
+    </div>
+
+    <div class="flow-card prep with-bg" style="background-image: url('images/ielts-masterclass.jpeg');">
+      <div class="card-content">
+        <h3>IELTS Masterclass</h3>
+        <p class="desc">Band 7+ coaching with personalized feedback loops.</p>
+        <ul class="topics">
+          <li>Advanced speaking practice</li>
+          <li>Grammar refinement</li>
+          <li>Academic vocabulary focus</li>
+        </ul>
+        <button class="explore-btn"><a href="contacts.html">Explore Now</a></button>
+      </div>
+    </div>
+
+
+  <div class="flow-card prep with-bg" style="background-image: url('images/gmat-termination.jpeg');">
+      <div class="card-content">
+        <h3>GMAT Termination</h3>
+        <p class="desc">Aggressive strategy prep for quantitative and verbal excellence.</p>
+        <ul class="topics">
+          <li>Timed analytics drills</li>
+          <li>Critical reasoning frameworks</li>
+          <li>AWA score maximization</li>
+        </ul>
+        <button class="explore-btn"><a href="contacts.html">Explore Now</a></button>
+      </div>
+    </div>
+
+    <div class="flow-card prep with-bg" style="background-image: url('images/toefl-masterclass.jpeg');">
+      <div class="card-content">
+        <h3>TOEFL Masterclass</h3>
+        <p class="desc">Deep reading, writing, and speaking labs designed for elite scores.</p>
+        <ul class="topics">
+          <li>Listening task decoding</li>
+          <li>Integrated speaking samples</li>
+          <li>Grammar diagnostics</li>
+        </ul>
+        <button class="explore-btn"><a href="contacts.html">Explore Now</a></button>
+      </div>
+    </div>
+
+    <div class="flow-card prep with-bg" style="background-image: url('images/hacking-spoken-english.jpeg');">
+      <div class="card-content">
+        <h3>Hacking Spoken English</h3>
+        <p class="desc">Fluency bootcamp for interviews, public speaking, and academic life.</p>
+        <ul class="topics">
+          <li>Pronunciation remapping</li>
+          <li>Live improvisation drills</li>
+          <li>Confidence-building sessions</li>
+        </ul>
+        <button class="explore-btn"><a href="contacts.html">Explore Now</a></button>
+      </div>
+    </div>
+
+    <div class="flow-card prep with-bg" style="background-image: url('images/duolingo-crackdown.jpeg');">
+      <div class="card-content">
+        <h3>Duolingo Crackdown</h3>
+        <p class="desc">Smarter prep for Duolingo's adaptive test. Short videos, fast hacks.</p>
+        <ul class="topics">
+          <li>Timed speaking simulation</li>
+          <li>Dictation decoding tips</li>
+          <li>Score strategy & pacing</li>
+        </ul>
+        <button class="explore-btn"><a href="contacts.html">Explore Now</a></button>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+</section>
+
+<!--Cookies-->
+<div id="cookies">
+  <div class="container">
+    <div class="subcontainer">
+      <div class="cookies">
+        <p>This Website uses cookies to ensure you get the best experience.
+          <a href="">More info.</a>
+        </p>
+        <button id="cookies-btn">That's it</button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+    <!-- Intro Content -->
+    <section class="intro">
+        <h1>Scholar's Guild</h1>
+        <p>Your trusted consultancy for overseas <a href= "courses.html">education opportunities</a>. <a href= "explore.html">Explore countries</a>, find the right <a href= "courses.html">course</a>, and <a href="contact.html">connect with us</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Scholar's Guild | <span id="currentDate"></span></p>
+    </footer>
+<script>
+$(document).ready(function() {
+  $('.tab-btn').click(function() {
+    var tabId = $(this).data('tab');
+
+    // Toggle active class on buttons
+    $('.tab-btn').removeClass('active');
+    $(this).addClass('active');
+
+    // Hide all tab contents
+    $('.tab-content').removeClass('active');
+
+    // Add active to selected tab with a slight delay to trigger animation
+    setTimeout(function() {
+  $('#' + tabId).addClass('active');
+}, 10); // Reduced from 50 to 10
+
+  });
+});
+$(window).on('scroll', function() {
+  $('.country-card').each(function() {
+    const cardTop = $(this).offset().top;
+    const cardBottom = cardTop + $(this).outerHeight();
+    const scrollTop = $(window).scrollTop();
+    const scrollBottom = scrollTop + $(window).height();
+
+    // Check if card is above viewport to trigger outro
+    if (cardBottom < scrollTop + 50) {
+      $(this).addClass('outro');
+    } else {
+      $(this).removeClass('outro');
+    }
+  });
+});
+</script>
+</body>
+</html>

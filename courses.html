@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scholars Guild — Courses</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/main2.js" defer></script>
+
+  <!--favicon-->
+<link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+     <!-- Navigation -->
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+  <div class="logo">
+    <img src="images/logo.png" alt="Scholar's Guild Logo" class="logo-icon">
+    <span class="logo-text">Scholar's Guild</span>
+  </div>
+</a>
+
+    <div class="nav-right">
+      <ul class="nav-tabs">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+
+      <a href="login.html" class="profile-btn">
+        <img src= "images/user.jpg" alt="User Profile" class="profile-pic">
+      </a>
+    </div>
+  </nav>
+</header>
+
+  <video autoplay muted class="bg-video" id="bgVideo" playsinline></video>
+  <main>
+    <section id="course-filter" aria-label="Filter courses">
+      <h1>Courses</h1>
+      <label for="country-select" class="muted">Country</label>
+      <select id="country-select">
+        <option value="all">All</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="germany">Germany</option>
+        <option value="au">Australia</option>
+        <option value="austria">Austria</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="denmark">Denmark</option>
+      </select>
+    </section>
+
+    <section id="course-list" class="grid" aria-live="polite">
+
+      <!-- UK - University of Oxford -->
+      <article class="course-card" data-country="uk">
+        <figure class="card-media">
+          <img src="images/oxf.jpeg" alt="University of Oxford campus" class="card-img" loading="lazy" />
+        </figure>
+        <h2 tabindex="0">University of Oxford</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Computer Science<br />
+          Anthropology<br />
+          Geography
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Biology<br />
+          Medicine<br />
+          History
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: £38,550/year</p>
+          <p><strong>MSc</strong> - Duration: 1 year, Tuition: £25,550/year</p>
+          <p>World-leading research, strong industry links, beautiful historic campus.</p>
+        </div>
+      </article>
+
+      <!-- UK - Imperial College London -->
+      <article class="course-card" data-country="uk">
+        <figure class="card-media">
+          <img src="images/imperial.jpg" alt="Imperial College London" class="card-img" loading="lazy" />
+        </figure>
+        <h2 tabindex="0">Imperial College London</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Global Business<br />
+          Mathematics
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Medicine<br />
+          Chemistry
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: £30,000/year</p>
+          <p><strong>MSc</strong> - Duration: 1 year, Tuition: £20,550/year</p>
+          <p>Advanced study in AI and machine learning, top-ranked STEM university.</p>
+        </div>
+      </article>
+
+      <!-- UK - Ulster University -->
+      <article class="course-card" data-country="uk">
+        <figure class="card-media">
+          <img src="images/ulster.jpeg" alt="Ulster University" class="card-img" loading="lazy" />
+        </figure>
+        <h2 tabindex="0">Ulster University</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Computing System<br />
+          English & Modern Language
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Law<br />
+          Economic & Management
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: £12,800/year</p>
+          <p><strong>MSc</strong> - Duration: 1 year, Tuition: £18,550/year</p>
+          <p>World-leading research, strong industry links, beautiful historic campus.</p>
+        </div>
+      </article>
+
+      <!-- USA -->
+      <article class="course-card" data-country="usa">
+        <figure class="card-media">
+          <img
+            src="images/mit.jpeg"
+            alt="Massachusetts Institute of Technology (MIT)"
+            class="card-img"
+            loading="lazy"
+          />
+        </figure>
+        <h2 tabindex="0">Massachusetts Institute of Technology (MIT)</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          EECS<br />
+          Fine Art
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Geography<br />
+          Material Science
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 4 years, Tuition: $59,750/year</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: $37,000/year</p>
+          <p>World-class faculty and high graduate employability.</p>
+        </div>
+      </article>
+
+      <article class="course-card" data-country="usa">
+        <figure class="card-media">
+          <img src="images/stanford.jpeg" alt="Stanford University" class="card-img" loading="lazy" />
+        </figure>
+        <h2 tabindex="0">Stanford University</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Data Science<br />
+          Politics
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Mathematics & Philosophy
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 4 years, Tuition: $55,000/year</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: $39,500/year</p>
+          <p>Beautiful campus, diverse community, innovation hub.</p>
+        </div>
+      </article>
+
+      <!-- Canada -->
+      <article class="course-card" data-country="canada">
+        <figure class="card-media">
+          <img
+            src="images/toronto.jpeg"
+            alt="University of Toronto campus"
+            class="card-img"
+            loading="lazy"
+          />
+        </figure>
+        <h2 tabindex="0">University of Toronto</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Biology<br />
+          Physics
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Engineering<br />
+          Psychology
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 4 years, Tuition: CA$45,000/year</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: CA$32,000/year</p>
+          <p>Strong research programs, urban campus in Toronto.</p>
+        </div>
+      </article>
+
+      <!-- Germany -->
+      <article class="course-card" data-country="germany">
+        <figure class="card-media">
+          <img
+            src="images/berlin.jpg"
+            alt="Technical University of Berlin"
+            class="card-img"
+            loading="lazy"
+          />
+        </figure>
+        <h2 tabindex="0">Technical University of Berlin</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Computer Science<br />
+          Business Administration
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Mechanical Engineering<br />
+          Environmental Sciences
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: €0 (public university)</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: €0 (public university)</p>
+          <p>High quality education, low tuition fees, strong industry links.</p>
+        </div>
+      </article>
+
+      <!-- Austria -->
+      <article class="course-card" data-country="austria">
+        <figure class="card-media">
+          <img
+            src="images/vienna.jpeg"
+            alt="Vienna University of Technology"
+            class="card-img"
+            loading="lazy"
+          />
+        </figure>
+        <h2 tabindex="0">Vienna University of Technology</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Architecture<br />
+          Environmental Engineering
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Civil Engineering<br />
+          Computer Science
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: €363.36/semester</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: €363.36/semester</p>
+          <p>Historic city, excellent research facilities.</p>
+        </div>
+      </article>
+
+      <!-- Netherlands -->
+      <article class="course-card" data-country="netherlands">
+        <figure class="card-media">
+          <img src="images/amsterdam.jpg" alt="Utrecht University" class="card-img" loading="lazy" />
+        </figure>
+        <h2 tabindex="0">Utrecht University</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Economics<br />
+          Psychology
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Law<br />
+          Computer Science
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: €2,168/year</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: €15,000/year</p>
+          <p>Excellent student facilities and vibrant city life.</p>
+        </div>
+      </article>
+
+      <!-- Australia -->
+      <article class="course-card" data-country="au">
+        <figure class="card-media">
+          <img src="images/melbourne.jpeg" alt="Australian National University" class="card-img" loading="lazy" />
+        </figure>
+        <h2 tabindex="0">Australian National University</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Environmental Science<br />
+          Politics
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Public Policy<br />
+          Economics
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: A$42,000/year</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: A$37,000/year</p>
+          <p>Renowned for research, strong international community.</p>
+        </div>
+      </article>
+
+      <!-- Denmark -->
+      <article class="course-card" data-country="denmark">
+        <figure class="card-media">
+          <img src="images/denmark.jpeg" alt="University of Copenhagen" class="card-img" loading="lazy" />
+        </figure>
+        <h2 tabindex="0">University of Copenhagen</h2>
+        <p class="desc">
+          <strong>Bachelor</strong><br />
+          Biology<br />
+          Political Science
+        </p>
+        <p class="desc" style="margin-top:8px;">
+          <strong>MSc</strong><br />
+          Economics<br />
+          Environmental Science
+        </p>
+        <button class="details-btn" aria-expanded="false">Details</button>
+        <div class="details" hidden>
+          <p><strong>Bachelor</strong> - Duration: 3 years, Tuition: Free for EU/EEA, otherwise approx. DKK 120,000/year</p>
+          <p><strong>MSc</strong> - Duration: 2 years, Tuition: Free for EU/EEA, otherwise approx. DKK 140,000/year</p>
+          <p>Strong focus on sustainability and innovation.</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+  <!-- Intro Content -->
+    <section class="intro">
+        <h1>Scholar's Guild</h1>
+        <p>Your trusted consultancy for overseas <a href= "courses.html">education opportunities</a>. <a href= "explore.html">Explore countries</a>, find the right <a href= "courses.html">course</a>, and <a href="contact.html">connect with us</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Scholar's Guild | <span id="currentDate"></span></p>
+    </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const bgVideo = document.getElementById("bgVideo");
+    const videoList = [
+      "images/uni-image1.mp4",
+      "images/uni-image2.mp4",
+      "images/uni-image3.mp4",
+      "images/uni-image4.mp4",
+      "images/uni-image5.mp4"
+    ];
+
+    let currentVideo = 0;
+
+    function playNext() {
+      const nextSrc = videoList[currentVideo];
+      bgVideo.src = nextSrc;
+      bgVideo.load();
+
+      // Wait until the video is ready before playing
+      bgVideo.oncanplaythrough = () => {
+        bgVideo.play();
+      };
+
+      // Handle errors gracefully
+      bgVideo.onerror = () => {
+        console.error("Error loading video:", nextSrc);
+        currentVideo = (currentVideo + 1) % videoList.length;
+        playNext(); // Skip to next video
+      };
+
+      currentVideo = (currentVideo + 1) % videoList.length;
+    }
+
+    bgVideo.addEventListener("ended", playNext);
+    playNext(); // Start the first video
+  });
+</script>
+</body>
+</html>
